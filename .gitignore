@@ -1,0 +1,49 @@
+# Dependencies
+server/node_modules/
+client/node_modules/
+
+# Environment files
+server/.env*
+client/.env*
+
+# Build files
+server/dist/
+server/build/
+client/dist/
+client/build/
+
+# Coverage
+server/coverage/
+client/coverage/
+
+# Logs and runtime data
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server/logs/
+server/pids/
+server/tmp/
+server/temp/
+server/*.pid
+server/*.seed
+server/*.pid.lock
+
+# Cache
+.cache/
+.parcel-cache/
+server/.cache/
+client/.cache/
+
+# Framework outputs
+.next/
+client/.next/
+vite.svg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
