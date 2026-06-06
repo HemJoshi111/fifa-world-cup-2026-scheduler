@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import teamRoutes from './routes/team.route.js';
+import matchRoutes from './routes/match.route.js';
 
 // Load environment variables
 dotenv.config();
@@ -19,6 +20,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/teams', teamRoutes);
+app.use('/api/matches', matchRoutes);
 
 // Basic Test Route
 app.get('/', (req, res) => {
