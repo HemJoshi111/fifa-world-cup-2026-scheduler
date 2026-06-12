@@ -68,20 +68,51 @@ function App() {
 
 // --- Utility Functions ---
 
-function sortMatchesByNumber(list) {
+function getMatchSerialNumber(match) {
+  const fromMatchNumber = Number(match?.match_number);
+  if (Number.isFinite(fromMatchNumber) && fromMatchNumber > 0) {
+    return fromMatchNumber;
+  }
+
+  const fromDetails = Number(
+    String(match?.details || match?.name || "").match(/\d+/)?.[0],
+  );
+  if (Number.isFinite(fromDetails) && fromDetails > 0) {
+    return fromDetails;
+  }
+
+  return Number.POSITIVE_INFINITY;
+}
+
+function sortMatchesByNumber(list, stadiumMap = {}) {
   return [...list].sort((a, b) => {
-    const aDate = parseMatchDateTime(a?.local_date, "UTC")?.toMillis?.();
-    const bDate = parseMatchDateTime(b?.local_date, "UTC")?.toMillis?.();
+    const aZone = getStadiumTimeZone(
+      stadiumMap[a?.stadium_id] || stadiumMap[a?.stadium_name] || null,
+    );
+    const bZone = getStadiumTimeZone(
+      stadiumMap[b?.stadium_id] || stadiumMap[b?.stadium_name] || null,
+    );
 
-    if (Number.isFinite(aDate) && Number.isFinite(bDate)) return aDate - bDate;
-    if (Number.isFinite(aDate)) return -1;
-    if (Number.isFinite(bDate)) return 1;
+    const aDate = parseMatchDateTime(a?.local_date, aZone)?.toMillis?.();
+    const bDate = parseMatchDateTime(b?.local_date, bZone)?.toMillis?.();
 
-    const aNum = Number(a?.id);
-    const bNum = Number(b?.id);
-    if (!Number.isNaN(aNum) && !Number.isNaN(bNum)) return aNum - bNum;
-    if (!Number.isNaN(aNum)) return -1;
-    if (!Number.isNaN(bNum)) return 1;
+    if (Number.isFinite(aDate) && Number.isFinite(bDate)) {
+      if (aDate !== bDate) return aDate - bDate;
+    } else if (Number.isFinite(aDate) || Number.isFinite(bDate)) {
+      return Number.isFinite(aDate) ? -1 : 1;
+    }
+
+    const aNum = getMatchSerialNumber(a);
+    const bNum = getMatchSerialNumber(b);
+    if (Number.isFinite(aNum) && Number.isFinite(bNum)) {
+      return aNum - bNum;
+    }
+
+    const aId = Number(a?.id);
+    const bId = Number(b?.id);
+    if (!Number.isNaN(aId) && !Number.isNaN(bId)) return aId - bId;
+    if (!Number.isNaN(aId)) return -1;
+    if (!Number.isNaN(bId)) return 1;
     return 0;
   });
 }
@@ -111,11 +142,15 @@ function getStadiumTimeZone(stadium) {
 
 function parseMatchDateTime(localDateTime, stadiumTimeZone) {
   if (!localDateTime) return null;
+  const zone = stadiumTimeZone || "UTC";
   const formats = [
-    ["yyyy-MM-dd HH:mm:ss", { zone: "UTC" }],
-    ["yyyy-MM-dd HH:mm", { zone: "UTC" }],
-    ["yyyy-MM-dd", { zone: "UTC" }],
-    ["MM/dd/yyyy HH:mm", { zone: "UTC" }],
+    ["yyyy-MM-dd HH:mm:ss", { zone }],
+    ["yyyy-MM-dd hh:mm:ss a", { zone }],
+    ["yyyy-MM-dd HH:mm", { zone }],
+    ["yyyy-MM-dd hh:mm a", { zone }],
+    ["yyyy-MM-dd", { zone }],
+    ["MM/dd/yyyy HH:mm", { zone }],
+    ["MM/dd/yyyy hh:mm a", { zone }],
   ];
 
   for (const [format, options] of formats) {
@@ -124,40 +159,33 @@ function parseMatchDateTime(localDateTime, stadiumTimeZone) {
   }
 
   const parsedSql = DateTime.fromSQL(localDateTime, {
-    zone: "UTC",
+    zone,
   });
   if (parsedSql.isValid) return parsedSql;
 
-  const parsedIso = DateTime.fromISO(localDateTime, { zone: "UTC" });
+  const parsedIso = DateTime.fromISO(localDateTime, { zone });
   if (parsedIso.isValid) return parsedIso;
 
   return null;
 }
 
-function formatMatchDateInViewerZone(
-  localDateTime,
-  stadiumTimeZone,
-  viewerTimeZone,
-) {
+function formatMatchDateLabel(localDateTime, stadiumTimeZone) {
   const parsed = parseMatchDateTime(localDateTime, stadiumTimeZone);
   if (!parsed) return "TBD";
-  return parsed.setZone(viewerTimeZone).toFormat("ccc, LLL dd");
+  return parsed.toFormat("ccc, LLL dd");
 }
 
-function formatMatchTimeInViewerZone(
-  localDateTime,
-  stadiumTimeZone,
-  viewerTimeZone,
-) {
+function formatMatchTimeLabel(localDateTime, stadiumTimeZone) {
   const parsed = parseMatchDateTime(localDateTime, stadiumTimeZone);
   if (!parsed) return "TBD";
-  return parsed.setZone(viewerTimeZone).toFormat("hh:mm a");
+  return parsed.toFormat("hh:mm a");
 }
 
 function getMatchStageInfo(match, groupLabel) {
   const roundValue = String(match?.round || "")
     .toUpperCase()
     .trim();
+  const stageValue = String(match?.stage || match?.type || "").toLowerCase();
 
   if (/^\d+$/.test(roundValue)) {
     return {
@@ -190,9 +218,33 @@ function getMatchStageInfo(match, groupLabel) {
     return { key: "final", label: "Final" };
   }
 
+  if (stageValue.includes("round of 32")) {
+    return { key: "r32", label: "Round of 32" };
+  }
+
+  if (stageValue.includes("round of 16")) {
+    return { key: "r16", label: "Round of 16" };
+  }
+
+  if (stageValue.includes("quarter")) {
+    return { key: "qf", label: "Quarter-finals" };
+  }
+
+  if (stageValue.includes("semi")) {
+    return { key: "sf", label: "Semi-finals" };
+  }
+
+  if (stageValue.includes("third") || stageValue.includes("3rd")) {
+    return { key: "third", label: "Third-Place Final" };
+  }
+
+  if (stageValue.includes("final")) {
+    return { key: "final", label: "Final" };
+  }
+
   return {
     key: roundValue.toLowerCase() || "group",
-    label: roundValue || "Group Stage",
+    label: match?.stage || roundValue || "Group Stage",
   };
 }
 
@@ -230,14 +282,22 @@ function extractRealTeamsFromFixtures(fixturesArray) {
     const groupLabel = groupLabelMap?.get(match?.group_id);
     const candidates = [
       {
-        id: match?.home?.id,
-        name_en: match?.home?.name,
-        flag: match?.home?.logo,
+        id:
+          match?.home_team_id ||
+          match?.home?.id ||
+          match?.home?.name ||
+          match?.home?.countryCode,
+        name_en: match?.home?.name || match?.home_team_en,
+        flag: match?.home?.flag || match?.home?.logo || match?.home_team_logo,
       },
       {
-        id: match?.away?.id,
-        name_en: match?.away?.name,
-        flag: match?.away?.logo,
+        id:
+          match?.away_team_id ||
+          match?.away?.id ||
+          match?.away?.name ||
+          match?.away?.countryCode,
+        name_en: match?.away?.name || match?.away_team_en,
+        flag: match?.away?.flag || match?.away?.logo || match?.away_team_logo,
       },
     ];
 
@@ -266,11 +326,29 @@ function extractRealTeamsFromFixtures(fixturesArray) {
 function normalizeFixture(match, groupLabelMap, matchNumber) {
   const homeTeam = match?.home || {};
   const awayTeam = match?.away || {};
-  const stadiumName = match?.stadium_name || match?.location || "";
+  const homeId =
+    homeTeam?.id ||
+    homeTeam?.countryCode ||
+    homeTeam?.name ||
+    match?.home_team_id ||
+    match?.home?.countryCode ||
+    match?.home?.name ||
+    "";
+  const awayId =
+    awayTeam?.id ||
+    awayTeam?.countryCode ||
+    awayTeam?.name ||
+    match?.away_team_id ||
+    match?.away?.countryCode ||
+    match?.away?.name ||
+    "";
+  const stadiumName =
+    match?.venue?.name || match?.stadium_name || match?.location || "";
   const stadiumId =
     match?.stadium_id || stadiumName || `stadium-${match?.id || "tba"}`;
   const matchDate =
     match?.local_date ||
+    match?.start ||
     (match?.date && match?.time
       ? `${match.date} ${match.time}`
       : match?.date || null);
@@ -279,25 +357,39 @@ function normalizeFixture(match, groupLabelMap, matchNumber) {
 
   return {
     ...match,
-    match_number: matchNumber,
-    home_team_id: homeTeam?.id,
-    home_team_en: homeTeam?.name,
-    home_team_label: homeTeam?.name,
-    home_team_logo: homeTeam?.logo,
-    away_team_id: awayTeam?.id,
-    away_team_en: awayTeam?.name,
-    away_team_label: awayTeam?.name,
-    away_team_logo: awayTeam?.logo,
+    match_number: match?.match_number || matchNumber,
+    home_team_id: homeId || null,
+    home_team_en: homeTeam?.name || match?.home?.name,
+    home_team_label: homeTeam?.name || match?.home?.name,
+    home_team_logo:
+      homeTeam?.flag ||
+      homeTeam?.logo ||
+      match?.home?.flag ||
+      match?.home?.logo,
+    home_team_shortcode: homeTeam?.shortCode || match?.home?.shortCode,
+    away_team_id: awayId || null,
+    away_team_en: awayTeam?.name || match?.away?.name,
+    away_team_label: awayTeam?.name || match?.away?.name,
+    away_team_logo:
+      awayTeam?.flag ||
+      awayTeam?.logo ||
+      match?.away?.flag ||
+      match?.away?.logo,
+    away_team_shortcode: awayTeam?.shortCode || match?.away?.shortCode,
     stadium_id: stadiumId,
     stadium_name: stadiumName,
+    stadium_city: match?.venue?.city || "",
+    stadium_address: match?.venue?.address || "",
     local_date: matchDate,
     group: groupLabel
       ? `Group ${groupLabel}`
-      : match?.group || (match?.group_id ? String(match.group_id) : undefined),
+      : match?.group ||
+        match?.groupName ||
+        (match?.group_id ? String(match.group_id) : undefined),
     group_label: groupLabel,
     type: stageInfo.key,
     stage_label: stageInfo.label,
-    status: match?.status || "upcoming",
+    status: match?.state || match?.status || "upcoming",
   };
 }
 
@@ -310,21 +402,40 @@ function extractDataFromFixtures(fixturesArray) {
   const stadiumsMap = new Map();
 
   normalizedFixtures.forEach((match) => {
-    if (match.home_team_id && !teamsMap.has(match.home_team_id)) {
-      teamsMap.set(match.home_team_id, {
-        id: match.home_team_id,
-        _id: match.home_team_id,
+    // Use shortCode from custom data if available, otherwise fallback to substring
+    const homeShortCode =
+      match.home_team_shortcode ||
+      match.home_team_en?.substring(0, 3).toUpperCase();
+    const awayShortCode =
+      match.away_team_shortcode ||
+      match.away_team_en?.substring(0, 3).toUpperCase();
+
+    const homeId =
+      match.home_team_id ||
+      match.home_team_en ||
+      match.home_team_shortcode ||
+      "";
+    const awayId =
+      match.away_team_id ||
+      match.away_team_en ||
+      match.away_team_shortcode ||
+      "";
+
+    if (homeId && !teamsMap.has(homeId)) {
+      teamsMap.set(homeId, {
+        id: homeId,
+        _id: homeId,
         name_en: match.home_team_en || match.home_team_label,
-        fifa_code: match.home_team_en?.substring(0, 3).toUpperCase(),
+        fifa_code: homeShortCode,
         flag: match.home_team_logo,
       });
     }
-    if (match.away_team_id && !teamsMap.has(match.away_team_id)) {
-      teamsMap.set(match.away_team_id, {
-        id: match.away_team_id,
-        _id: match.away_team_id,
+    if (awayId && !teamsMap.has(awayId)) {
+      teamsMap.set(awayId, {
+        id: awayId,
+        _id: awayId,
         name_en: match.away_team_en || match.away_team_label,
-        fifa_code: match.away_team_en?.substring(0, 3).toUpperCase(),
+        fifa_code: awayShortCode,
         flag: match.away_team_logo,
       });
     }
@@ -333,7 +444,8 @@ function extractDataFromFixtures(fixturesArray) {
         id: match.stadium_id,
         _id: match.stadium_id,
         name_en: match.stadium_name || `Stadium ${match.stadium_id}`,
-        city_en: "Host City",
+        city_en: match.stadium_city || "Host City",
+        address: match.stadium_address || "",
         capacity: 60000,
       });
     }
@@ -492,13 +604,13 @@ function OverviewPage() {
       try {
         setLoading(true);
         const response = await fetchWithCache("worldcup-fixtures", () =>
-          apiGet("/fixtures"),
+          apiGet("/local/matches"),
         );
-        const matchesData = response?.data || response || [];
+        const matchesData = response?.list || response?.data || response || [];
         const extracted = extractDataFromFixtures(matchesData);
 
         setMatches(extracted.fixtures);
-        setTeams(extracted.teams.slice(0, 8));
+        setTeams(extracted.teams);
         setStadiums(extracted.stadiums);
       } catch (err) {
         setError(
@@ -519,6 +631,20 @@ function OverviewPage() {
 
   const summary = { teams: 48, groups: 12, matches: 104, stadiums: 16 };
   const visibleMatches = matches;
+  const featuredMatches = [...matches]
+    .map((match) => ({ match, status: normalizeMatchStatus(match) }))
+    .sort((a, b) => {
+      const priority = { live: 0, upcoming: 1, finished: 2 };
+      const aPriority = priority[a.status.kind] ?? 3;
+      const bPriority = priority[b.status.kind] ?? 3;
+      if (aPriority !== bPriority) return aPriority - bPriority;
+      return getMatchSerialNumber(a.match) - getMatchSerialNumber(b.match);
+    })
+    .filter(
+      ({ status }) => status.kind === "live" || status.kind === "upcoming",
+    )
+    .slice(0, 3)
+    .map(({ match }) => match);
 
   return (
     <div className="page-stack overview-page">
@@ -590,10 +716,10 @@ function OverviewPage() {
               </NavLink>
             </div>
             <div className="featured-matches-grid">
-              {visibleMatches.slice(0, 3).map((match) => (
+              {featuredMatches.map((match) => (
                 <div
                   key={match.id || match._id}
-                  className="featured-match-card"
+                  className={`featured-match-card${normalizeMatchStatus(match).kind === "live" ? " live-card-hover" : ""}`}
                 >
                   <MatchRow
                     match={match}
@@ -695,7 +821,7 @@ function OverviewPage() {
                 <p className="card-subtitle">Explore the top contenders</p>
               </div>
               <div className="featured-teams-grid">
-                {teams.map((team) => (
+                {teams.slice(0, 8).map((team) => (
                   <TeamChip
                     key={team.id || team._id}
                     team={team}
@@ -756,15 +882,16 @@ function MatchesPage() {
   const [loading, setLoading] = useState(true);
   const [groupFilter, setGroupFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
+  const [statusFilter, setStatusFilter] = useState("live-upcoming");
 
   useEffect(() => {
     async function load() {
       try {
         setLoading(true);
         const response = await fetchWithCache("worldcup-fixtures", () =>
-          apiGet("/fixtures"),
+          apiGet("/local/matches"),
         );
-        const matchesData = response?.data || response || [];
+        const matchesData = response?.list || response?.data || response || [];
         const extracted = extractDataFromFixtures(matchesData);
 
         setMatches(extracted.fixtures);
@@ -786,11 +913,22 @@ function MatchesPage() {
     [stadiums],
   );
 
-  const visibleMatches = matches.filter((match) => {
-    const groupOk = groupFilter === "all" || match.group === groupFilter;
-    const typeOk = typeFilter === "all" || match.type === typeFilter;
-    return groupOk && typeOk;
-  });
+  const visibleMatches = sortMatchesByNumber(
+    matches.filter((match) => {
+      const groupOk = groupFilter === "all" || match.group === groupFilter;
+      const typeOk = typeFilter === "all" || match.type === typeFilter;
+      const matchStatus = normalizeMatchStatus(match);
+      const statusOk =
+        statusFilter === "all" ||
+        (statusFilter === "live-upcoming" &&
+          (matchStatus.kind === "live" || matchStatus.kind === "upcoming")) ||
+        (statusFilter === "ended" && matchStatus.kind === "finished") ||
+        (statusFilter === "live" && matchStatus.kind === "live") ||
+        (statusFilter === "upcoming" && matchStatus.kind === "upcoming");
+      return groupOk && typeOk && statusOk;
+    }),
+    stadiumMap,
+  );
 
   const stageOptions = [
     { value: "all", label: "All Stages" },
@@ -801,6 +939,14 @@ function MatchesPage() {
     { value: "sf", label: "Semi-Final" },
     { value: "third", label: "Third-Place" },
     { value: "final", label: "Final" },
+  ];
+
+  const statusOptions = [
+    { value: "all", label: "All" },
+    { value: "live-upcoming", label: "Live + Upcoming" },
+    { value: "live", label: "Live" },
+    { value: "upcoming", label: "Upcoming" },
+    { value: "ended", label: "Ended" },
   ];
 
   return (
@@ -817,6 +963,22 @@ function MatchesPage() {
               className="filter-dropdown"
             >
               {stageOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="filter-group">
+            <label htmlFor="status-select">Status:</label>
+            <select
+              id="status-select"
+              value={statusFilter}
+              onChange={(e) => setStatusFilter(e.target.value)}
+              className="filter-dropdown"
+            >
+              {statusOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
                 </option>
@@ -855,10 +1017,29 @@ function TeamsPage() {
 
   useEffect(() => {
     setLoading(true);
-    fetchWithCache("worldcup-fixtures", () => apiGet("/fixtures"))
+    fetchWithCache("worldcup-teams", () => apiGet("/local/teams"))
       .then((res) => {
-        const fixtures = res?.data || res || [];
-        setTeams(extractRealTeamsFromFixtures(fixtures));
+        const teamsData = res?.list || res?.data || res || [];
+        // Extract real teams from teams data
+        const teams = (Array.isArray(teamsData) ? teamsData : []).map(
+          (team) => {
+            const groupLabel = team.group
+              ? `Group ${team.group}`
+              : team.groupName || "Group Stage";
+            return {
+              id: team.id,
+              _id: team.id,
+              name_en: team.teamName,
+              fifa_code:
+                team.teamShortCode ||
+                team.teamName?.substring(0, 3).toUpperCase(),
+              flag: team.flag || team.logo,
+              countryCode: team.countryCode,
+              group_name: groupLabel,
+            };
+          },
+        );
+        setTeams(teams);
       })
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
@@ -867,7 +1048,7 @@ function TeamsPage() {
   const groupOptions = [
     { value: "all", label: "All Groups" },
     ...Array.from(new Set(teams.map((t) => t.group_name).filter(Boolean)))
-      .sort()
+      .sort((a, b) => a.localeCompare(b))
       .map((group) => ({
         value: group,
         label: group,
@@ -964,18 +1145,36 @@ function TeamDetailsPage() {
       setError("");
 
       try {
-        const fixturesResponse = await fetchWithCache("worldcup-fixtures", () =>
-          apiGet("/fixtures"),
+        const teamsResponse = await fetchWithCache("worldcup-teams", () =>
+          apiGet("/local/teams"),
         );
-        const fixtures = unwrapArrayResponse(fixturesResponse);
-        const matchedTeam = getTeamById(fixtures, teamId) || {
-          id: teamId,
-          _id: teamId,
-          name_en: `Team ${teamId}`,
-          fifa_code: String(teamId).slice(0, 3).toUpperCase(),
-          flag: "",
-          group_name: "Group Stage",
-        };
+        const teamsData =
+          teamsResponse?.list || teamsResponse?.data || teamsResponse || [];
+        const localTeam = (Array.isArray(teamsData) ? teamsData : []).find(
+          (team) => String(team.id) === String(teamId),
+        );
+
+        const matchedTeam = localTeam
+          ? {
+              id: localTeam.id,
+              _id: localTeam.id,
+              name_en: localTeam.teamName,
+              fifa_code:
+                localTeam.teamShortCode ||
+                localTeam.teamName?.substring(0, 3).toUpperCase(),
+              flag: localTeam.flag || localTeam.logo,
+              group_name: localTeam.group
+                ? `Group ${localTeam.group}`
+                : localTeam.groupName || "Group Stage",
+            }
+          : {
+              id: teamId,
+              _id: teamId,
+              name_en: `Team ${teamId}`,
+              fifa_code: String(teamId).slice(0, 3).toUpperCase(),
+              flag: "",
+              group_name: "Group Stage",
+            };
 
         const squadResponse = await fetchWithCache(
           `worldcup-squad:${teamId}:${matchedTeam.name_en || ""}`,
@@ -1181,11 +1380,6 @@ function GroupsPage() {
   const [standings, setStandings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [groupFilter, setGroupFilter] = useState("all");
-  const groupIds = useMemo(
-    () =>
-      Array.from({ length: 12 }, (_, index) => String.fromCharCode(65 + index)),
-    [],
-  );
 
   useEffect(() => {
     let active = true;
@@ -1193,31 +1387,38 @@ function GroupsPage() {
     async function loadStandings() {
       try {
         setLoading(true);
-        const responses = await Promise.all(
-          groupIds.map((groupId) =>
-            fetchWithCache(`worldcup-standings:${groupId}`, () =>
-              apiGet(`/standings?group=${groupId}`),
-            ),
-          ),
+        const response = await fetchWithCache("worldcup-standings", () =>
+          apiGet(`/local/standings`),
         );
 
         if (!active) return;
 
-        const groupTables = responses
-          .map((response, index) => {
-            const rows = Array.isArray(response?.data)
-              ? response.data
-              : Array.isArray(response)
-                ? response
-                : [];
+        const groupsData = response?.list || response || [];
+        const groupTables = groupsData.map((groupData, index) => {
+          const teams = (groupData.teams || []).map((team) => ({
+            ...team,
+            team: team,
+            team_name: team.teamName,
+            played: team.stats?.played || 0,
+            won: team.stats?.won || 0,
+            drawn: team.stats?.drawn || 0,
+            lost: team.stats?.lost || 0,
+            goals_for: team.stats?.goalsFor || 0,
+            goals_against: team.stats?.goalsAgainst || 0,
+            goal_difference: team.stats?.goalDifference || 0,
+            points: team.points || team.stats?.totalPoints || 0,
+            rank: team.position || 0,
+          }));
 
-            return {
-              _id: groupIds[index],
-              group: groupIds[index],
-              teams: rows,
-            };
-          })
-          .filter((group) => group.teams.length > 0);
+          return {
+            _id: groupData.groupName || String.fromCharCode(65 + index),
+            group: groupData.groupName
+              ? groupData.groupName.split(" ")[1]
+              : String.fromCharCode(65 + index),
+            teams,
+            groupName: groupData.groupName,
+          };
+        });
 
         setStandings(groupTables);
       } catch (error) {
@@ -1236,7 +1437,7 @@ function GroupsPage() {
     return () => {
       active = false;
     };
-  }, [groupIds]);
+  }, []);
 
   const groupOptions = [
     { value: "all", label: "All Groups" },
@@ -1252,22 +1453,26 @@ function GroupsPage() {
 
   function getStandingTeamName(standing) {
     return (
-      standing?.team?.name || standing?.team_name || standing?.name_en || "Team"
+      standing?.teamName ||
+      standing?.team?.name ||
+      standing?.team_name ||
+      standing?.name_en ||
+      "Team"
     );
   }
 
   function getStandingTeamLogo(standing) {
     return (
-      standing?.team?.flag ||
-      standing?.team?.logo ||
       standing?.flag ||
       standing?.logo ||
+      standing?.team?.flag ||
+      standing?.team?.logo ||
       ""
     );
   }
 
   function getStandingTeamId(standing) {
-    return standing?.team?.id || standing?.team_id || standing?.id || "";
+    return standing?.id || standing?.team_id || standing?.team?.id || "";
   }
 
   function getStandingValue(standing, keys) {
@@ -1284,7 +1489,7 @@ function GroupsPage() {
   return (
     <div className="page-stack">
       <div className="groups-filter-bar">
-        <h2>Groups</h2>
+        <h2>Groups & Standings</h2>
         <div className="filter-controls">
           <div className="filter-group">
             <label htmlFor="group-select">Group:</label>
@@ -1311,7 +1516,7 @@ function GroupsPage() {
           {visibleStandings.map((group) => (
             <article key={group._id} className="card group-card">
               <div className="section-head">
-                <h3>Group {group.group}</h3>
+                <h3>{group.groupName || `Group ${group.group}`}</h3>
                 <span className="muted">{group.teams.length} teams</span>
               </div>
               <div className="table-scroll">
@@ -1366,7 +1571,10 @@ function GroupsPage() {
                           >
                             <div className="standing-team-cell">
                               <span className="standing-team-rank">
-                                {getStandingValue(standing, ["rank"])}
+                                {getStandingValue(standing, [
+                                  "position",
+                                  "rank",
+                                ])}
                               </span>
                               <span className="standing-team-crest">
                                 {getStandingTeamLogo(standing) ? (
@@ -1390,8 +1598,8 @@ function GroupsPage() {
                         </td>
                         <td>
                           {getStandingValue(standing, [
-                            "matches",
                             "played",
+                            "matches",
                             "mp",
                           ])}
                         </td>
@@ -1406,28 +1614,32 @@ function GroupsPage() {
                         </td>
                         <td>
                           {getStandingValue(standing, [
-                            "goals_scored",
                             "goals_for",
+                            "goalsFor",
                             "gf",
                           ])}
                         </td>
                         <td>
                           {getStandingValue(standing, [
-                            "goals_conceded",
                             "goals_against",
+                            "goalsAgainst",
                             "ga",
                           ])}
                         </td>
                         <td>
                           {getStandingValue(standing, [
-                            "goal_diff",
-                            "gd",
                             "goal_difference",
+                            "goalDifference",
+                            "gd",
                           ])}
                         </td>
                         <td>
                           <strong>
-                            {getStandingValue(standing, ["points", "pts"])}
+                            {getStandingValue(standing, [
+                              "points",
+                              "totalPoints",
+                              "pts",
+                            ])}
                           </strong>
                         </td>
                       </tr>
@@ -1626,34 +1838,39 @@ function Stat({ label, value }) {
 }
 
 function MatchRow({ match, teams, stadiums }) {
-  const homeTeamId = match.home_team_id ?? match.home?.id;
-  const awayTeamId = match.away_team_id ?? match.away?.id;
+  const homeTeamId =
+    match.home_team_id ||
+    match.home?.id ||
+    match.home_team_en ||
+    match.home?.name ||
+    "";
+  const awayTeamId =
+    match.away_team_id ||
+    match.away?.id ||
+    match.away_team_en ||
+    match.away?.name ||
+    "";
   const homeTeam = teams[homeTeamId];
   const awayTeam = teams[awayTeamId];
   const homeCode =
     homeTeam?.fifa_code ||
+    match.home_team_shortcode ||
     match.home_team_label?.substring(0, 3)?.toUpperCase() ||
     "TBD";
   const awayCode =
     awayTeam?.fifa_code ||
+    match.away_team_shortcode ||
     match.away_team_label?.substring(0, 3)?.toUpperCase() ||
     "TBD";
   const stadium = stadiums[match.stadium_id];
-  const viewerTimeZone = getViewerTimeZone();
   const stadiumTimeZone = getStadiumTimeZone(stadium);
-  const date = formatMatchDateInViewerZone(
-    match.local_date,
-    stadiumTimeZone,
-    viewerTimeZone,
-  );
-  const time = formatMatchTimeInViewerZone(
-    match.local_date,
-    stadiumTimeZone,
-    viewerTimeZone,
-  );
+  const date = formatMatchDateLabel(match.local_date, stadiumTimeZone);
+  const time = formatMatchTimeLabel(match.local_date, stadiumTimeZone);
+  const matchStatus = normalizeMatchStatus(match);
+  const isLive = matchStatus.kind === "live";
 
   return (
-    <div className="fixture-card-modern">
+    <div className={`fixture-card-modern${isLive ? " fixture-card-live" : ""}`}>
       <div className="fixture-teams-row">
         <div className="fixture-team-cell">
           <div className="fixture-team-flag">
@@ -1686,7 +1903,11 @@ function MatchRow({ match, teams, stadiums }) {
         <div className="fixture-detail-item">
           <MapPin size={16} className="fixture-icon" />
           <span className="fixture-detail-text">
-            {stadium?.name_en || `Stadium ${match.stadium_id || "TBA"}`}
+            {
+              String(stadium?.name_en || `Stadium ${match.stadium_id || "TBA"}`)
+                .split(" · ")[0]
+                .split(" - ")[0]
+            }
           </span>
         </div>
 
@@ -1695,9 +1916,15 @@ function MatchRow({ match, teams, stadiums }) {
           <span className="fixture-detail-text">{date}</span>
         </div>
 
-        <div className="fixture-detail-item">
+        <div className="fixture-detail-item fixture-detail-time-row">
           <Clock size={16} className="fixture-icon" />
           <span className="fixture-detail-text">{time}</span>
+          {isLive ? (
+            <span className="fixture-live-badge" aria-label="Live match">
+              <span className="live-dot" /> LIVE
+              <ChevronRight size={14} className="fixture-live-arrow" />
+            </span>
+          ) : null}
         </div>
       </div>
     </div>
@@ -1731,12 +1958,88 @@ function TeamChip({ team, to }) {
 }
 
 function resolveMatchNumber(match, index) {
-  return match?.match_number || index + 1;
+  const serialNumber = getMatchSerialNumber(match);
+  return Number.isFinite(serialNumber) &&
+    serialNumber !== Number.POSITIVE_INFINITY
+    ? serialNumber
+    : index + 1;
+}
+
+function normalizeMatchStatus(match) {
+  const rawState = String(match?.state || match?.status || "")
+    .trim()
+    .toLowerCase();
+  const rawResult = String(match?.result || "").trim();
+  const homeName = String(
+    match?.home?.name || match?.home_team_en || "",
+  ).trim();
+  const awayName = String(
+    match?.away?.name || match?.away_team_en || "",
+  ).trim();
+
+  let actionLabel = rawResult || "Match Finished";
+  if (/\bwon\b/i.test(rawResult)) {
+    const winner = [homeName, awayName].find((name) =>
+      new RegExp(name, "i").test(rawResult),
+    );
+    actionLabel = winner ? `${winner} Wins` : "Match Won";
+  } else if (/\bdraw\b/i.test(rawResult)) {
+    actionLabel = "Match Draw";
+  }
+
+  if (
+    rawState.includes("live") ||
+    rawState.includes("in play") ||
+    rawState.includes("halftime") ||
+    rawState.includes("penalty")
+  ) {
+    return {
+      kind: "live",
+      label: "Match Live",
+      actionLabel: rawResult || "Live Now",
+      pillClass: "match-status match-status-live",
+      actionClass: "match-action match-action-live",
+    };
+  }
+
+  if (
+    rawState.includes("full time") ||
+    rawState.includes("finished") ||
+    rawState.includes("complete") ||
+    rawState.includes("final") ||
+    rawResult
+  ) {
+    return {
+      kind: "finished",
+      label: "Finished",
+      actionLabel,
+      pillClass: "match-status match-status-finished",
+      actionClass: "match-action match-action-finished",
+    };
+  }
+
+  return {
+    kind: "upcoming",
+    label: "Event Not Started",
+    actionLabel: "Event Not Started",
+    pillClass: "match-status match-status-upcoming",
+    actionClass: "match-action match-action-upcoming",
+  };
 }
 
 function MatchCard({ match, teams, stadiums, index }) {
-  const homeTeamId = match.home_team_id ?? match.home?.id;
-  const awayTeamId = match.away_team_id ?? match.away?.id;
+  const homeTeamId =
+    match.home_team_id ||
+    match.home?.id ||
+    match.home_team_en ||
+    match.home?.name ||
+    "";
+  const awayTeamId =
+    match.away_team_id ||
+    match.away?.id ||
+    match.away_team_en ||
+    match.away?.name ||
+    "";
   const homeTeam = teams[homeTeamId];
   const awayTeam = teams[awayTeamId];
   const stadium = stadiums[match.stadium_id];
@@ -1744,29 +2047,34 @@ function MatchCard({ match, teams, stadiums, index }) {
   const stageBadgeClass = `match-stage match-stage-${match.type || "group"}`;
   const homeCode =
     homeTeam?.fifa_code ||
+    match.home_team_shortcode ||
     match.home_team_label?.substring(0, 3) ||
     match.home?.name?.substring(0, 3) ||
     "TBD";
   const awayCode =
     awayTeam?.fifa_code ||
+    match.away_team_shortcode ||
     match.away_team_label?.substring(0, 3) ||
     match.away?.name?.substring(0, 3) ||
     "TBD";
-  const isLive = match?.status?.toLowerCase?.() === "live";
+  const matchStatus = normalizeMatchStatus(match);
+  const isLive = matchStatus.kind === "live";
+  const isFinished = matchStatus.kind === "finished";
   const venue =
     stadium?.name_en ||
     match?.stadium_name ||
+    match?.venue?.name ||
     match?.location ||
     `Stadium ${match?.stadium_id || "TBA"}`;
-  const displayDate = formatMatchDateInViewerZone(
+  const venueCity = match?.stadium_city || match?.venue?.city || "";
+  const venueAddress = match?.stadium_address || match?.venue?.address || "";
+  const displayDate = formatMatchDateLabel(
     match.local_date,
     getStadiumTimeZone(stadium),
-    getViewerTimeZone(),
   );
-  const displayTime = formatMatchTimeInViewerZone(
+  const displayTime = formatMatchTimeLabel(
     match.local_date,
     getStadiumTimeZone(stadium),
-    getViewerTimeZone(),
   );
 
   return (
@@ -1775,14 +2083,7 @@ function MatchCard({ match, teams, stadiums, index }) {
         <span className="match-number">
           Match {resolveMatchNumber(match, index)}
         </span>
-        <div className="match-badge-group">
-          <span className={stageBadgeClass}>{stageLabel}</span>
-          {isLive ? (
-            <span className="match-status match-status-live">
-              <span className="live-dot" /> LIVE
-            </span>
-          ) : null}
-        </div>
+        <span className={stageBadgeClass}>{stageLabel}</span>
       </div>
       <div className="match-teams-row">
         <div className="match-team">
@@ -1829,17 +2130,21 @@ function MatchCard({ match, teams, stadiums, index }) {
         <div className="match-meta-divider" />
         <div className="match-venue-row">
           <MapPin size={14} className="match-meta-icon" />
-          <span className="match-venue-text">{venue}</span>
+          <span className="match-venue-text">
+            {String(venue).split(" · ")[0].split(" - ")[0]}
+          </span>
         </div>
+        {venueAddress ? null : null}
       </div>
       {isLive ? (
-        <button className="match-action match-action-live" type="button">
-          <PlayCircle size={18} /> Watch Live Now
+        <button className={matchStatus.actionClass} type="button">
+          <span className="live-dot" /> {matchStatus.actionLabel}
         </button>
       ) : (
-        <div className="match-action match-action-upcoming">
-          <span>⏳</span> Event Not Started
-        </div>
+        <button className={matchStatus.actionClass} type="button">
+          {isFinished ? <Trophy size={16} /> : <span>⏳</span>}
+          {matchStatus.actionLabel}
+        </button>
       )}
     </article>
   );

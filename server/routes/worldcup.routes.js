@@ -15,7 +15,10 @@ const {
     getLiveStandings, 
     getStandings, 
     getTopGoalscorers, 
-    getTopCards 
+    getTopCards,
+    getLocalMatches,
+    getLocalTeams,
+    getLocalStandings
 } = require('../controllers/worldcup.controller.js');
 
 // Live Scores & Fixtures
@@ -40,5 +43,10 @@ router.get('/standings', getStandings);
 // Player Statistics
 router.get('/goalscorers', getTopGoalscorers);
 router.get('/cards', getTopCards);
+
+// Local Data Endpoints
+router.get('/local/matches', getLocalMatches);
+router.get('/local/teams', getLocalTeams);
+router.get('/local/standings', getLocalStandings);
 
 module.exports = router;

@@ -1,0 +1,3957 @@
+{
+  "list": [
+    {
+      "title": "Mexico vs South Africa",
+      "name": "Mexico vs South Africa",
+      "matchId": 19609127,
+      "details": "Match 1",
+      "stage": "Group Stage",
+      "group": "Group A",
+      "venue": {
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "address": "Calzada de Tlalpan 3665, CoyoacÃ¡n"
+      },
+      "state": "Full Time",
+      "participants": [
+        {
+          "countryCode": "mx",
+          "name": "Mexico",
+          "isHome": true,
+          "shortCode": "MEX"
+        },
+        {
+          "countryCode": "za",
+          "name": "South Africa",
+          "isHome": false,
+          "shortCode": "RSA"
+        }
+      ],
+      "start": "2026-06-12 12:45:00 AM",
+      "startTimestamp": 1781204400,
+      "odds": [],
+      "result": "Mexico won after full-time.",
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "b7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Korea Republic vs Czech Republic",
+      "name": "Korea Republic vs Czech Republic",
+      "matchId": 19609153,
+      "details": "Match 2",
+      "stage": "Group Stage",
+      "group": "Group A",
+      "venue": {
+        "name": "Guadalajara Stadium",
+        "city": "Zapopan",
+        "address": "Circuito J.V.C. 2800, El BajÃ­o, 45014 Zapopan, Jalisco, Mexico"
+      },
+      "state": "Full Time",
+      "participants": [
+        {
+          "countryCode": "cz",
+          "name": "Czech Republic",
+          "isHome": false,
+          "shortCode": "CZE"
+        },
+        {
+          "countryCode": "kr",
+          "name": "Korea Republic",
+          "isHome": true,
+          "shortCode": "KOR"
+        }
+      ],
+      "start": "2026-06-12 07:45:00 AM",
+      "startTimestamp": 1781229600,
+      "odds": [],
+      "result": "Korea Republic won after full-time.",
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "cLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Canada vs Bosnia and Herzegovina",
+      "name": "Canada vs Bosnia and Herzegovina",
+      "matchId": 19609154,
+      "details": "Match 3",
+      "stage": "Group Stage",
+      "group": "Group B",
+      "venue": {
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "address": "170 Princesâ€™ Boulevard"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ca",
+          "name": "Canada",
+          "isHome": true,
+          "shortCode": "CAN"
+        },
+        {
+          "countryCode": "ba",
+          "name": "Bosnia and Herzegovina",
+          "isHome": false,
+          "shortCode": "BIH"
+        }
+      ],
+      "start": "2026-06-13 12:45:00 AM",
+      "startTimestamp": 1781290800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "cbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "United States vs Paraguay",
+      "name": "United States vs Paraguay",
+      "matchId": 19609133,
+      "details": "Match 4",
+      "stage": "Group Stage",
+      "group": "Group D",
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "us",
+          "name": "United States",
+          "isHome": true,
+          "shortCode": "USA"
+        },
+        {
+          "countryCode": "py",
+          "name": "Paraguay",
+          "isHome": false,
+          "shortCode": "PAR"
+        }
+      ],
+      "start": "2026-06-13 06:45:00 AM",
+      "startTimestamp": 1781312400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "crArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Qatar vs Switzerland",
+      "name": "Qatar vs Switzerland",
+      "matchId": 19609130,
+      "details": "Match 5",
+      "stage": "Group Stage",
+      "group": "Group B",
+      "venue": {
+        "name": "San Francisco Bay Area Stadium",
+        "city": "Santa Clara",
+        "address": "4900 Marie P DeBartolo Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "qa",
+          "name": "Qatar",
+          "isHome": true,
+          "shortCode": "QAT"
+        },
+        {
+          "countryCode": "ch",
+          "name": "Switzerland",
+          "isHome": false,
+          "shortCode": "SUI"
+        }
+      ],
+      "start": "2026-06-14 12:45:00 AM",
+      "startTimestamp": 1781377200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "c7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Brazil vs Morocco",
+      "name": "Brazil vs Morocco",
+      "matchId": 19609131,
+      "details": "Match 6",
+      "stage": "Group Stage",
+      "group": "Group C",
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "br",
+          "name": "Brazil",
+          "isHome": true,
+          "shortCode": "BRA"
+        },
+        {
+          "countryCode": "ma",
+          "name": "Morocco",
+          "isHome": false,
+          "shortCode": "MAR"
+        }
+      ],
+      "start": "2026-06-14 03:45:00 AM",
+      "startTimestamp": 1781388000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "dLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Haiti vs Scotland",
+      "name": "Haiti vs Scotland",
+      "matchId": 19609155,
+      "details": "Match 7",
+      "stage": "Group Stage",
+      "group": "Group C",
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ht",
+          "name": "Haiti",
+          "isHome": true,
+          "shortCode": "HAI"
+        },
+        {
+          "countryCode": "gb-sct",
+          "name": "Scotland",
+          "isHome": false,
+          "shortCode": "SCO"
+        }
+      ],
+      "start": "2026-06-14 06:45:00 AM",
+      "startTimestamp": 1781398800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "dbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Australia vs TÃ¼rkiye",
+      "name": "Australia vs TÃ¼rkiye",
+      "matchId": 19609156,
+      "details": "Match 8",
+      "stage": "Group Stage",
+      "group": "Group D",
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "au",
+          "name": "Australia",
+          "isHome": true,
+          "shortCode": "AUS"
+        },
+        {
+          "countryCode": "tr",
+          "name": "TÃ¼rkiye",
+          "isHome": false,
+          "shortCode": "TUR"
+        }
+      ],
+      "start": "2026-06-14 09:45:00 AM",
+      "startTimestamp": 1781409600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "drArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Germany vs Curacao",
+      "name": "Germany vs Curacao",
+      "matchId": 19609158,
+      "details": "Match 9",
+      "stage": "Group Stage",
+      "group": "Group E",
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "de",
+          "name": "Germany",
+          "isHome": true,
+          "shortCode": "GER"
+        },
+        {
+          "countryCode": "cw",
+          "name": "Curacao",
+          "isHome": false,
+          "shortCode": "CUW"
+        }
+      ],
+      "start": "2026-06-14 10:45:00 PM",
+      "startTimestamp": 1781456400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "d7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Netherlands vs Japan",
+      "name": "Netherlands vs Japan",
+      "matchId": 19609138,
+      "details": "Match 10",
+      "stage": "Group Stage",
+      "group": "Group F",
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "nl",
+          "name": "Netherlands",
+          "isHome": true,
+          "shortCode": "NED"
+        },
+        {
+          "countryCode": "jp",
+          "name": "Japan",
+          "isHome": false,
+          "shortCode": "JPN"
+        }
+      ],
+      "start": "2026-06-15 01:45:00 AM",
+      "startTimestamp": 1781467200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "eLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "CÃ´te d'Ivoire vs Ecuador",
+      "name": "CÃ´te d'Ivoire vs Ecuador",
+      "matchId": 19609157,
+      "details": "Match 11",
+      "stage": "Group Stage",
+      "group": "Group E",
+      "venue": {
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "address": "1 Lincoln Financial Field Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ec",
+          "name": "Ecuador",
+          "isHome": false,
+          "shortCode": "ECU"
+        },
+        {
+          "countryCode": "ci",
+          "name": "CÃ´te d'Ivoire",
+          "isHome": true,
+          "shortCode": "CIV"
+        }
+      ],
+      "start": "2026-06-15 04:45:00 AM",
+      "startTimestamp": 1781478000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "ebArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Sweden vs Tunisia",
+      "name": "Sweden vs Tunisia",
+      "matchId": 19609159,
+      "details": "Match 12",
+      "stage": "Group Stage",
+      "group": "Group F",
+      "venue": {
+        "name": "Monterrey Stadium",
+        "city": "Guadalupe",
+        "address": "Avenida Pablo Livas 2011, Colonia La Pastora"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "tn",
+          "name": "Tunisia",
+          "isHome": false,
+          "shortCode": "TUN"
+        },
+        {
+          "countryCode": "se",
+          "name": "Sweden",
+          "isHome": true,
+          "shortCode": "SWE"
+        }
+      ],
+      "start": "2026-06-15 07:45:00 AM",
+      "startTimestamp": 1781488800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "erArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Spain vs Cape Verde Islands",
+      "name": "Spain vs Cape Verde Islands",
+      "matchId": 19609162,
+      "details": "Match 13",
+      "stage": "Group Stage",
+      "group": "Group H",
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "es",
+          "name": "Spain",
+          "isHome": true,
+          "shortCode": "ESP"
+        },
+        {
+          "countryCode": "cv",
+          "name": "Cape Verde Islands",
+          "isHome": false,
+          "shortCode": "CPV"
+        }
+      ],
+      "start": "2026-06-15 09:45:00 PM",
+      "startTimestamp": 1781539200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "e7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Belgium vs Egypt",
+      "name": "Belgium vs Egypt",
+      "matchId": 19609139,
+      "details": "Match 14",
+      "stage": "Group Stage",
+      "group": "Group G",
+      "venue": {
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "address": "800 Occidental Avenue South"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "eg",
+          "name": "Egypt",
+          "isHome": false,
+          "shortCode": "EGY"
+        },
+        {
+          "countryCode": "be",
+          "name": "Belgium",
+          "isHome": true,
+          "shortCode": "BEL"
+        }
+      ],
+      "start": "2026-06-16 12:45:00 AM",
+      "startTimestamp": 1781550000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "fLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Saudi Arabia vs Uruguay",
+      "name": "Saudi Arabia vs Uruguay",
+      "matchId": 19609161,
+      "details": "Match 15",
+      "stage": "Group Stage",
+      "group": "Group H",
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "uy",
+          "name": "Uruguay",
+          "isHome": false,
+          "shortCode": "URU"
+        },
+        {
+          "countryCode": "sa",
+          "name": "Saudi Arabia",
+          "isHome": true,
+          "shortCode": "KSA"
+        }
+      ],
+      "start": "2026-06-16 03:45:00 AM",
+      "startTimestamp": 1781560800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "fbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Iran vs New Zealand",
+      "name": "Iran vs New Zealand",
+      "matchId": 19609160,
+      "details": "Match 16",
+      "stage": "Group Stage",
+      "group": "Group G",
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ir",
+          "name": "Iran",
+          "isHome": true,
+          "shortCode": "IRN"
+        },
+        {
+          "countryCode": "nz",
+          "name": "New Zealand",
+          "isHome": false,
+          "shortCode": "NZL"
+        }
+      ],
+      "start": "2026-06-16 06:45:00 AM",
+      "startTimestamp": 1781571600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "frArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "France vs Senegal",
+      "name": "France vs Senegal",
+      "matchId": 19609143,
+      "details": "Match 17",
+      "stage": "Group Stage",
+      "group": "Group I",
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "fr",
+          "name": "France",
+          "isHome": true,
+          "shortCode": "FRA"
+        },
+        {
+          "countryCode": "sn",
+          "name": "Senegal",
+          "isHome": false,
+          "shortCode": "SEN"
+        }
+      ],
+      "start": "2026-06-17 12:45:00 AM",
+      "startTimestamp": 1781636400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "f7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Iraq vs Norway",
+      "name": "Iraq vs Norway",
+      "matchId": 19609163,
+      "details": "Match 18",
+      "stage": "Group Stage",
+      "group": "Group I",
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "no",
+          "name": "Norway",
+          "isHome": false,
+          "shortCode": "NOR"
+        },
+        {
+          "countryCode": "iq",
+          "name": "Iraq",
+          "isHome": true,
+          "shortCode": "IRQ"
+        }
+      ],
+      "start": "2026-06-17 03:45:00 AM",
+      "startTimestamp": 1781647200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "gLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Argentina vs Algeria",
+      "name": "Argentina vs Algeria",
+      "matchId": 19609145,
+      "details": "Match 19",
+      "stage": "Group Stage",
+      "group": "Group J",
+      "venue": {
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "address": "1 Arrowhead Drive, Kansas City, MO 64129, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ar",
+          "name": "Argentina",
+          "isHome": true,
+          "shortCode": "ARG"
+        },
+        {
+          "countryCode": "dz",
+          "name": "Algeria",
+          "isHome": false,
+          "shortCode": "ALG"
+        }
+      ],
+      "start": "2026-06-17 06:45:00 AM",
+      "startTimestamp": 1781658000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "gbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Austria vs Jordan",
+      "name": "Austria vs Jordan",
+      "matchId": 19609164,
+      "details": "Match 20",
+      "stage": "Group Stage",
+      "group": "Group J",
+      "venue": {
+        "name": "San Francisco Bay Area Stadium",
+        "city": "Santa Clara",
+        "address": "4900 Marie P DeBartolo Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "at",
+          "name": "Austria",
+          "isHome": true,
+          "shortCode": "AUT"
+        },
+        {
+          "countryCode": "jo",
+          "name": "Jordan",
+          "isHome": false,
+          "shortCode": "JOR"
+        }
+      ],
+      "start": "2026-06-17 09:45:00 AM",
+      "startTimestamp": 1781668800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "grArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Portugal vs Congo DR",
+      "name": "Portugal vs Congo DR",
+      "matchId": 19609166,
+      "details": "Match 21",
+      "stage": "Group Stage",
+      "group": "Group K",
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "cd",
+          "name": "Congo DR",
+          "isHome": false,
+          "shortCode": "COD"
+        },
+        {
+          "countryCode": "pt",
+          "name": "Portugal",
+          "isHome": true,
+          "shortCode": "POR"
+        }
+      ],
+      "start": "2026-06-17 10:45:00 PM",
+      "startTimestamp": 1781715600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "g7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "England vs Croatia",
+      "name": "England vs Croatia",
+      "matchId": 19609149,
+      "details": "Match 22",
+      "stage": "Group Stage",
+      "group": "Group L",
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "gb-eng",
+          "name": "England",
+          "isHome": true,
+          "shortCode": "ENG"
+        },
+        {
+          "countryCode": "hr",
+          "name": "Croatia",
+          "isHome": false,
+          "shortCode": "CRO"
+        }
+      ],
+      "start": "2026-06-18 01:45:00 AM",
+      "startTimestamp": 1781726400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "hLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Ghana vs Panama",
+      "name": "Ghana vs Panama",
+      "matchId": 19609167,
+      "details": "Match 23",
+      "stage": "Group Stage",
+      "group": "Group L",
+      "venue": {
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "address": "170 Princesâ€™ Boulevard"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "pa",
+          "name": "Panama",
+          "isHome": false,
+          "shortCode": "PAN"
+        },
+        {
+          "countryCode": "gh",
+          "name": "Ghana",
+          "isHome": true,
+          "shortCode": "GHA"
+        }
+      ],
+      "start": "2026-06-18 04:45:00 AM",
+      "startTimestamp": 1781737200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "hbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Uzbekistan vs Colombia",
+      "name": "Uzbekistan vs Colombia",
+      "matchId": 19609165,
+      "details": "Match 24",
+      "stage": "Group Stage",
+      "group": "Group K",
+      "venue": {
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "address": "Calzada de Tlalpan 3665, CoyoacÃ¡n"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "uz",
+          "name": "Uzbekistan",
+          "isHome": true,
+          "shortCode": "UZB"
+        },
+        {
+          "countryCode": "co",
+          "name": "Colombia",
+          "isHome": false,
+          "shortCode": "COL"
+        }
+      ],
+      "start": "2026-06-18 07:45:00 AM",
+      "startTimestamp": 1781748000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "hrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Czech Republic vs South Africa",
+      "name": "Czech Republic vs South Africa",
+      "matchId": 19609168,
+      "details": "Match 25",
+      "stage": "Group Stage",
+      "group": "Group A",
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "za",
+          "name": "South Africa",
+          "isHome": false,
+          "shortCode": "RSA"
+        },
+        {
+          "countryCode": "cz",
+          "name": "Czech Republic",
+          "isHome": true,
+          "shortCode": "CZE"
+        }
+      ],
+      "start": "2026-06-18 09:45:00 PM",
+      "startTimestamp": 1781798400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276414157,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "h7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Switzerland vs Bosnia and Herzegovina",
+      "name": "Switzerland vs Bosnia and Herzegovina",
+      "matchId": 19609169,
+      "details": "Match 26",
+      "stage": "Group Stage",
+      "group": "Group B",
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ba",
+          "name": "Bosnia and Herzegovina",
+          "isHome": false,
+          "shortCode": "BIH"
+        },
+        {
+          "countryCode": "ch",
+          "name": "Switzerland",
+          "isHome": true,
+          "shortCode": "SUI"
+        }
+      ],
+      "start": "2026-06-19 12:45:00 AM",
+      "startTimestamp": 1781809200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "iLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Canada vs Qatar",
+      "name": "Canada vs Qatar",
+      "matchId": 19609170,
+      "details": "Match 27",
+      "stage": "Group Stage",
+      "group": "Group B",
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "qa",
+          "name": "Qatar",
+          "isHome": false,
+          "shortCode": "QAT"
+        },
+        {
+          "countryCode": "ca",
+          "name": "Canada",
+          "isHome": true,
+          "shortCode": "CAN"
+        }
+      ],
+      "start": "2026-06-19 03:45:00 AM",
+      "startTimestamp": 1781820000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "ibArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Mexico vs Korea Republic",
+      "name": "Mexico vs Korea Republic",
+      "matchId": 19609128,
+      "details": "Match 28",
+      "stage": "Group Stage",
+      "group": "Group A",
+      "venue": {
+        "name": "Guadalajara Stadium",
+        "city": "Zapopan",
+        "address": "Circuito J.V.C. 2800, El BajÃ­o, 45014 Zapopan, Jalisco, Mexico"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "kr",
+          "name": "Korea Republic",
+          "isHome": false,
+          "shortCode": "KOR"
+        },
+        {
+          "countryCode": "mx",
+          "name": "Mexico",
+          "isHome": true,
+          "shortCode": "MEX"
+        }
+      ],
+      "start": "2026-06-19 06:45:00 AM",
+      "startTimestamp": 1781830800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "irArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "United States vs Australia",
+      "name": "United States vs Australia",
+      "matchId": 19609134,
+      "details": "Match 29",
+      "stage": "Group Stage",
+      "group": "Group D",
+      "venue": {
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "address": "800 Occidental Avenue South"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "us",
+          "name": "United States",
+          "isHome": true,
+          "shortCode": "USA"
+        },
+        {
+          "countryCode": "au",
+          "name": "Australia",
+          "isHome": false,
+          "shortCode": "AUS"
+        }
+      ],
+      "start": "2026-06-20 12:45:00 AM",
+      "startTimestamp": 1781895600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "i7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Scotland vs Morocco",
+      "name": "Scotland vs Morocco",
+      "matchId": 19609171,
+      "details": "Match 30",
+      "stage": "Group Stage",
+      "group": "Group C",
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "gb-sct",
+          "name": "Scotland",
+          "isHome": true,
+          "shortCode": "SCO"
+        },
+        {
+          "countryCode": "ma",
+          "name": "Morocco",
+          "isHome": false,
+          "shortCode": "MAR"
+        }
+      ],
+      "start": "2026-06-20 03:45:00 AM",
+      "startTimestamp": 1781906400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "jLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Brazil vs Haiti",
+      "name": "Brazil vs Haiti",
+      "matchId": 19609172,
+      "details": "Match 31",
+      "stage": "Group Stage",
+      "group": "Group C",
+      "venue": {
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "address": "1 Lincoln Financial Field Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "br",
+          "name": "Brazil",
+          "isHome": true,
+          "shortCode": "BRA"
+        },
+        {
+          "countryCode": "ht",
+          "name": "Haiti",
+          "isHome": false,
+          "shortCode": "HAI"
+        }
+      ],
+      "start": "2026-06-20 06:15:00 AM",
+      "startTimestamp": 1781915400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "jbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "TÃ¼rkiye vs Paraguay",
+      "name": "TÃ¼rkiye vs Paraguay",
+      "matchId": 19609173,
+      "details": "Match 32",
+      "stage": "Group Stage",
+      "group": "Group D",
+      "venue": {
+        "name": "San Francisco Bay Area Stadium",
+        "city": "Santa Clara",
+        "address": "4900 Marie P DeBartolo Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "tr",
+          "name": "TÃ¼rkiye",
+          "isHome": true,
+          "shortCode": "TUR"
+        },
+        {
+          "countryCode": "py",
+          "name": "Paraguay",
+          "isHome": false,
+          "shortCode": "PAR"
+        }
+      ],
+      "start": "2026-06-20 08:45:00 AM",
+      "startTimestamp": 1781924400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "jrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Netherlands vs Sweden",
+      "name": "Netherlands vs Sweden",
+      "matchId": 19609176,
+      "details": "Match 33",
+      "stage": "Group Stage",
+      "group": "Group F",
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "nl",
+          "name": "Netherlands",
+          "isHome": true,
+          "shortCode": "NED"
+        },
+        {
+          "countryCode": "se",
+          "name": "Sweden",
+          "isHome": false,
+          "shortCode": "SWE"
+        }
+      ],
+      "start": "2026-06-20 10:45:00 PM",
+      "startTimestamp": 1781974800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "j7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Germany vs CÃ´te d'Ivoire",
+      "name": "Germany vs CÃ´te d'Ivoire",
+      "matchId": 19609135,
+      "details": "Match 34",
+      "stage": "Group Stage",
+      "group": "Group E",
+      "venue": {
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "address": "170 Princesâ€™ Boulevard"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "de",
+          "name": "Germany",
+          "isHome": true,
+          "shortCode": "GER"
+        },
+        {
+          "countryCode": "ci",
+          "name": "CÃ´te d'Ivoire",
+          "isHome": false,
+          "shortCode": "CIV"
+        }
+      ],
+      "start": "2026-06-21 01:45:00 AM",
+      "startTimestamp": 1781985600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "kLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Ecuador vs Curacao",
+      "name": "Ecuador vs Curacao",
+      "matchId": 19609174,
+      "details": "Match 35",
+      "stage": "Group Stage",
+      "group": "Group E",
+      "venue": {
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "address": "1 Arrowhead Drive, Kansas City, MO 64129, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "cw",
+          "name": "Curacao",
+          "isHome": false,
+          "shortCode": "CUW"
+        },
+        {
+          "countryCode": "ec",
+          "name": "Ecuador",
+          "isHome": true,
+          "shortCode": "ECU"
+        }
+      ],
+      "start": "2026-06-21 05:45:00 AM",
+      "startTimestamp": 1782000000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "kbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Tunisia vs Japan",
+      "name": "Tunisia vs Japan",
+      "matchId": 19609175,
+      "details": "Match 36",
+      "stage": "Group Stage",
+      "group": "Group F",
+      "venue": {
+        "name": "Monterrey Stadium",
+        "city": "Guadalupe",
+        "address": "Avenida Pablo Livas 2011, Colonia La Pastora"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "jp",
+          "name": "Japan",
+          "isHome": false,
+          "shortCode": "JPN"
+        },
+        {
+          "countryCode": "tn",
+          "name": "Tunisia",
+          "isHome": true,
+          "shortCode": "TUN"
+        }
+      ],
+      "start": "2026-06-21 09:45:00 AM",
+      "startTimestamp": 1782014400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "krArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Spain vs Saudi Arabia",
+      "name": "Spain vs Saudi Arabia",
+      "matchId": 19609142,
+      "details": "Match 37",
+      "stage": "Group Stage",
+      "group": "Group H",
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "es",
+          "name": "Spain",
+          "isHome": true,
+          "shortCode": "ESP"
+        },
+        {
+          "countryCode": "sa",
+          "name": "Saudi Arabia",
+          "isHome": false,
+          "shortCode": "KSA"
+        }
+      ],
+      "start": "2026-06-21 09:45:00 PM",
+      "startTimestamp": 1782057600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "k7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Belgium vs Iran",
+      "name": "Belgium vs Iran",
+      "matchId": 19609152,
+      "details": "Match 38",
+      "stage": "Group Stage",
+      "group": "Group G",
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "be",
+          "name": "Belgium",
+          "isHome": true,
+          "shortCode": "BEL"
+        },
+        {
+          "countryCode": "ir",
+          "name": "Iran",
+          "isHome": false,
+          "shortCode": "IRN"
+        }
+      ],
+      "start": "2026-06-22 12:45:00 AM",
+      "startTimestamp": 1782068400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "lLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Uruguay vs Cape Verde Islands",
+      "name": "Uruguay vs Cape Verde Islands",
+      "matchId": 19609178,
+      "details": "Match 39",
+      "stage": "Group Stage",
+      "group": "Group H",
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "cv",
+          "name": "Cape Verde Islands",
+          "isHome": false,
+          "shortCode": "CPV"
+        },
+        {
+          "countryCode": "uy",
+          "name": "Uruguay",
+          "isHome": true,
+          "shortCode": "URU"
+        }
+      ],
+      "start": "2026-06-22 03:45:00 AM",
+      "startTimestamp": 1782079200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "lbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "New Zealand vs Egypt",
+      "name": "New Zealand vs Egypt",
+      "matchId": 19609177,
+      "details": "Match 40",
+      "stage": "Group Stage",
+      "group": "Group G",
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "nz",
+          "name": "New Zealand",
+          "isHome": true,
+          "shortCode": "NZL"
+        },
+        {
+          "countryCode": "eg",
+          "name": "Egypt",
+          "isHome": false,
+          "shortCode": "EGY"
+        }
+      ],
+      "start": "2026-06-22 06:45:00 AM",
+      "startTimestamp": 1782090000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "lrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Argentina vs Austria",
+      "name": "Argentina vs Austria",
+      "matchId": 19609146,
+      "details": "Match 41",
+      "stage": "Group Stage",
+      "group": "Group J",
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ar",
+          "name": "Argentina",
+          "isHome": true,
+          "shortCode": "ARG"
+        },
+        {
+          "countryCode": "at",
+          "name": "Austria",
+          "isHome": false,
+          "shortCode": "AUT"
+        }
+      ],
+      "start": "2026-06-22 10:45:00 PM",
+      "startTimestamp": 1782147600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "l7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "France vs Iraq",
+      "name": "France vs Iraq",
+      "matchId": 19609179,
+      "details": "Match 42",
+      "stage": "Group Stage",
+      "group": "Group I",
+      "venue": {
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "address": "1 Lincoln Financial Field Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "iq",
+          "name": "Iraq",
+          "isHome": false,
+          "shortCode": "IRQ"
+        },
+        {
+          "countryCode": "fr",
+          "name": "France",
+          "isHome": true,
+          "shortCode": "FRA"
+        }
+      ],
+      "start": "2026-06-23 02:45:00 AM",
+      "startTimestamp": 1782162000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "mLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Norway vs Senegal",
+      "name": "Norway vs Senegal",
+      "matchId": 19609180,
+      "details": "Match 43",
+      "stage": "Group Stage",
+      "group": "Group I",
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "no",
+          "name": "Norway",
+          "isHome": true,
+          "shortCode": "NOR"
+        },
+        {
+          "countryCode": "sn",
+          "name": "Senegal",
+          "isHome": false,
+          "shortCode": "SEN"
+        }
+      ],
+      "start": "2026-06-23 05:45:00 AM",
+      "startTimestamp": 1782172800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "mbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Jordan vs Algeria",
+      "name": "Jordan vs Algeria",
+      "matchId": 19609181,
+      "details": "Match 44",
+      "stage": "Group Stage",
+      "group": "Group J",
+      "venue": {
+        "name": "San Francisco Bay Area Stadium",
+        "city": "Santa Clara",
+        "address": "4900 Marie P DeBartolo Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "dz",
+          "name": "Algeria",
+          "isHome": false,
+          "shortCode": "ALG"
+        },
+        {
+          "countryCode": "jo",
+          "name": "Jordan",
+          "isHome": true,
+          "shortCode": "JOR"
+        }
+      ],
+      "start": "2026-06-23 08:45:00 AM",
+      "startTimestamp": 1782183600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "mrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Portugal vs Uzbekistan",
+      "name": "Portugal vs Uzbekistan",
+      "matchId": 19609148,
+      "details": "Match 45",
+      "stage": "Group Stage",
+      "group": "Group K",
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "pt",
+          "name": "Portugal",
+          "isHome": true,
+          "shortCode": "POR"
+        },
+        {
+          "countryCode": "uz",
+          "name": "Uzbekistan",
+          "isHome": false,
+          "shortCode": "UZB"
+        }
+      ],
+      "start": "2026-06-23 10:45:00 PM",
+      "startTimestamp": 1782234000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "m7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "England vs Ghana",
+      "name": "England vs Ghana",
+      "matchId": 19609183,
+      "details": "Match 46",
+      "stage": "Group Stage",
+      "group": "Group L",
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "gb-eng",
+          "name": "England",
+          "isHome": true,
+          "shortCode": "ENG"
+        },
+        {
+          "countryCode": "gh",
+          "name": "Ghana",
+          "isHome": false,
+          "shortCode": "GHA"
+        }
+      ],
+      "start": "2026-06-24 01:45:00 AM",
+      "startTimestamp": 1782244800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "nLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Panama vs Croatia",
+      "name": "Panama vs Croatia",
+      "matchId": 19609151,
+      "details": "Match 47",
+      "stage": "Group Stage",
+      "group": "Group L",
+      "venue": {
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "address": "170 Princesâ€™ Boulevard"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "pa",
+          "name": "Panama",
+          "isHome": true,
+          "shortCode": "PAN"
+        },
+        {
+          "countryCode": "hr",
+          "name": "Croatia",
+          "isHome": false,
+          "shortCode": "CRO"
+        }
+      ],
+      "start": "2026-06-24 04:45:00 AM",
+      "startTimestamp": 1782255600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "nbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Colombia vs Congo DR",
+      "name": "Colombia vs Congo DR",
+      "matchId": 19609182,
+      "details": "Match 48",
+      "stage": "Group Stage",
+      "group": "Group K",
+      "venue": {
+        "name": "Guadalajara Stadium",
+        "city": "Zapopan",
+        "address": "Circuito J.V.C. 2800, El BajÃ­o, 45014 Zapopan, Jalisco, Mexico"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "co",
+          "name": "Colombia",
+          "isHome": true,
+          "shortCode": "COL"
+        },
+        {
+          "countryCode": "cd",
+          "name": "Congo DR",
+          "isHome": false,
+          "shortCode": "COD"
+        }
+      ],
+      "start": "2026-06-24 07:45:00 AM",
+      "startTimestamp": 1782266400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "nrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Switzerland vs Canada",
+      "name": "Switzerland vs Canada",
+      "matchId": 19609129,
+      "details": "Match 49",
+      "stage": "Group Stage",
+      "group": "Group B",
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ch",
+          "name": "Switzerland",
+          "isHome": true,
+          "shortCode": "SUI"
+        },
+        {
+          "countryCode": "ca",
+          "name": "Canada",
+          "isHome": false,
+          "shortCode": "CAN"
+        }
+      ],
+      "start": "2026-06-25 12:45:00 AM",
+      "startTimestamp": 1782327600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "n7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Bosnia and Herzegovina vs Qatar",
+      "name": "Bosnia and Herzegovina vs Qatar",
+      "matchId": 19609186,
+      "details": "Match 50",
+      "stage": "Group Stage",
+      "group": "Group B",
+      "venue": {
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "address": "800 Occidental Avenue South"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "qa",
+          "name": "Qatar",
+          "isHome": false,
+          "shortCode": "QAT"
+        },
+        {
+          "countryCode": "ba",
+          "name": "Bosnia and Herzegovina",
+          "isHome": true,
+          "shortCode": "BIH"
+        }
+      ],
+      "start": "2026-06-25 12:45:00 AM",
+      "startTimestamp": 1782327600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276418990,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "oLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Scotland vs Brazil",
+      "name": "Scotland vs Brazil",
+      "matchId": 19609132,
+      "details": "Match 51",
+      "stage": "Group Stage",
+      "group": "Group C",
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "gb-sct",
+          "name": "Scotland",
+          "isHome": true,
+          "shortCode": "SCO"
+        },
+        {
+          "countryCode": "br",
+          "name": "Brazil",
+          "isHome": false,
+          "shortCode": "BRA"
+        }
+      ],
+      "start": "2026-06-25 03:45:00 AM",
+      "startTimestamp": 1782338400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "obArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Morocco vs Haiti",
+      "name": "Morocco vs Haiti",
+      "matchId": 19609187,
+      "details": "Match 52",
+      "stage": "Group Stage",
+      "group": "Group C",
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ht",
+          "name": "Haiti",
+          "isHome": false,
+          "shortCode": "HAI"
+        },
+        {
+          "countryCode": "ma",
+          "name": "Morocco",
+          "isHome": true,
+          "shortCode": "MAR"
+        }
+      ],
+      "start": "2026-06-25 03:45:00 AM",
+      "startTimestamp": 1782338400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "orArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "South Africa vs Korea Republic",
+      "name": "South Africa vs Korea Republic",
+      "matchId": 19609184,
+      "details": "Match 53",
+      "stage": "Group Stage",
+      "group": "Group A",
+      "venue": {
+        "name": "Monterrey Stadium",
+        "city": "Guadalupe",
+        "address": "Avenida Pablo Livas 2011, Colonia La Pastora"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "za",
+          "name": "South Africa",
+          "isHome": true,
+          "shortCode": "RSA"
+        },
+        {
+          "countryCode": "kr",
+          "name": "Korea Republic",
+          "isHome": false,
+          "shortCode": "KOR"
+        }
+      ],
+      "start": "2026-06-25 06:45:00 AM",
+      "startTimestamp": 1782349200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "o7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Czech Republic vs Mexico",
+      "name": "Czech Republic vs Mexico",
+      "matchId": 19609185,
+      "details": "Match 54",
+      "stage": "Group Stage",
+      "group": "Group A",
+      "venue": {
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "address": "Calzada de Tlalpan 3665, CoyoacÃ¡n"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "cz",
+          "name": "Czech Republic",
+          "isHome": true,
+          "shortCode": "CZE"
+        },
+        {
+          "countryCode": "mx",
+          "name": "Mexico",
+          "isHome": false,
+          "shortCode": "MEX"
+        }
+      ],
+      "start": "2026-06-25 06:45:00 AM",
+      "startTimestamp": 1782349200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "pLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Ecuador vs Germany",
+      "name": "Ecuador vs Germany",
+      "matchId": 19609136,
+      "details": "Match 55",
+      "stage": "Group Stage",
+      "group": "Group E",
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ec",
+          "name": "Ecuador",
+          "isHome": true,
+          "shortCode": "ECU"
+        },
+        {
+          "countryCode": "de",
+          "name": "Germany",
+          "isHome": false,
+          "shortCode": "GER"
+        }
+      ],
+      "start": "2026-06-26 01:45:00 AM",
+      "startTimestamp": 1782417600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "pbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Curacao vs CÃ´te d'Ivoire",
+      "name": "Curacao vs CÃ´te d'Ivoire",
+      "matchId": 19609191,
+      "details": "Match 56",
+      "stage": "Group Stage",
+      "group": "Group E",
+      "venue": {
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "address": "1 Lincoln Financial Field Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "cw",
+          "name": "Curacao",
+          "isHome": true,
+          "shortCode": "CUW"
+        },
+        {
+          "countryCode": "ci",
+          "name": "CÃ´te d'Ivoire",
+          "isHome": false,
+          "shortCode": "CIV"
+        }
+      ],
+      "start": "2026-06-26 01:45:00 AM",
+      "startTimestamp": 1782417600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "prArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Tunisia vs Netherlands",
+      "name": "Tunisia vs Netherlands",
+      "matchId": 19609137,
+      "details": "Match 57",
+      "stage": "Group Stage",
+      "group": "Group F",
+      "venue": {
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "address": "1 Arrowhead Drive, Kansas City, MO 64129, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "tn",
+          "name": "Tunisia",
+          "isHome": true,
+          "shortCode": "TUN"
+        },
+        {
+          "countryCode": "nl",
+          "name": "Netherlands",
+          "isHome": false,
+          "shortCode": "NED"
+        }
+      ],
+      "start": "2026-06-26 04:45:00 AM",
+      "startTimestamp": 1782428400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "p7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Japan vs Sweden",
+      "name": "Japan vs Sweden",
+      "matchId": 19609190,
+      "details": "Match 58",
+      "stage": "Group Stage",
+      "group": "Group F",
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "se",
+          "name": "Sweden",
+          "isHome": false,
+          "shortCode": "SWE"
+        },
+        {
+          "countryCode": "jp",
+          "name": "Japan",
+          "isHome": true,
+          "shortCode": "JPN"
+        }
+      ],
+      "start": "2026-06-26 04:45:00 AM",
+      "startTimestamp": 1782428400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "qLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Paraguay vs Australia",
+      "name": "Paraguay vs Australia",
+      "matchId": 19609188,
+      "details": "Match 59",
+      "stage": "Group Stage",
+      "group": "Group D",
+      "venue": {
+        "name": "San Francisco Bay Area Stadium",
+        "city": "Santa Clara",
+        "address": "4900 Marie P DeBartolo Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "py",
+          "name": "Paraguay",
+          "isHome": true,
+          "shortCode": "PAR"
+        },
+        {
+          "countryCode": "au",
+          "name": "Australia",
+          "isHome": false,
+          "shortCode": "AUS"
+        }
+      ],
+      "start": "2026-06-26 07:45:00 AM",
+      "startTimestamp": 1782439200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "qbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "TÃ¼rkiye vs United States",
+      "name": "TÃ¼rkiye vs United States",
+      "matchId": 19609189,
+      "details": "Match 60",
+      "stage": "Group Stage",
+      "group": "Group D",
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "tr",
+          "name": "TÃ¼rkiye",
+          "isHome": true,
+          "shortCode": "TUR"
+        },
+        {
+          "countryCode": "us",
+          "name": "United States",
+          "isHome": false,
+          "shortCode": "USA"
+        }
+      ],
+      "start": "2026-06-26 07:45:00 AM",
+      "startTimestamp": 1782439200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "qrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Norway vs France",
+      "name": "Norway vs France",
+      "matchId": 19609144,
+      "details": "Match 61",
+      "stage": "Group Stage",
+      "group": "Group I",
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "no",
+          "name": "Norway",
+          "isHome": true,
+          "shortCode": "NOR"
+        },
+        {
+          "countryCode": "fr",
+          "name": "France",
+          "isHome": false,
+          "shortCode": "FRA"
+        }
+      ],
+      "start": "2026-06-27 12:45:00 AM",
+      "startTimestamp": 1782500400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "q7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Senegal vs Iraq",
+      "name": "Senegal vs Iraq",
+      "matchId": 19609195,
+      "details": "Match 62",
+      "stage": "Group Stage",
+      "group": "Group I",
+      "venue": {
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "address": "170 Princesâ€™ Boulevard"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "sn",
+          "name": "Senegal",
+          "isHome": true,
+          "shortCode": "SEN"
+        },
+        {
+          "countryCode": "iq",
+          "name": "Iraq",
+          "isHome": false,
+          "shortCode": "IRQ"
+        }
+      ],
+      "start": "2026-06-27 12:45:00 AM",
+      "startTimestamp": 1782500400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "rLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Uruguay vs Spain",
+      "name": "Uruguay vs Spain",
+      "matchId": 19609141,
+      "details": "Match 63",
+      "stage": "Group Stage",
+      "group": "Group H",
+      "venue": {
+        "name": "Guadalajara Stadium",
+        "city": "Zapopan",
+        "address": "Circuito J.V.C. 2800, El BajÃ­o, 45014 Zapopan, Jalisco, Mexico"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "uy",
+          "name": "Uruguay",
+          "isHome": true,
+          "shortCode": "URU"
+        },
+        {
+          "countryCode": "es",
+          "name": "Spain",
+          "isHome": false,
+          "shortCode": "ESP"
+        }
+      ],
+      "start": "2026-06-27 05:45:00 AM",
+      "startTimestamp": 1782518400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "rbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Cape Verde Islands vs Saudi Arabia",
+      "name": "Cape Verde Islands vs Saudi Arabia",
+      "matchId": 19609194,
+      "details": "Match 64",
+      "stage": "Group Stage",
+      "group": "Group H",
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "sa",
+          "name": "Saudi Arabia",
+          "isHome": false,
+          "shortCode": "KSA"
+        },
+        {
+          "countryCode": "cv",
+          "name": "Cape Verde Islands",
+          "isHome": true,
+          "shortCode": "CPV"
+        }
+      ],
+      "start": "2026-06-27 05:45:00 AM",
+      "startTimestamp": 1782518400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "rrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "New Zealand vs Belgium",
+      "name": "New Zealand vs Belgium",
+      "matchId": 19609192,
+      "details": "Match 65",
+      "stage": "Group Stage",
+      "group": "Group G",
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "be",
+          "name": "Belgium",
+          "isHome": false,
+          "shortCode": "BEL"
+        },
+        {
+          "countryCode": "nz",
+          "name": "New Zealand",
+          "isHome": true,
+          "shortCode": "NZL"
+        }
+      ],
+      "start": "2026-06-27 08:45:00 AM",
+      "startTimestamp": 1782529200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "r7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Egypt vs Iran",
+      "name": "Egypt vs Iran",
+      "matchId": 19609193,
+      "details": "Match 66",
+      "stage": "Group Stage",
+      "group": "Group G",
+      "venue": {
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "address": "800 Occidental Avenue South"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ir",
+          "name": "Iran",
+          "isHome": false,
+          "shortCode": "IRN"
+        },
+        {
+          "countryCode": "eg",
+          "name": "Egypt",
+          "isHome": true,
+          "shortCode": "EGY"
+        }
+      ],
+      "start": "2026-06-27 08:45:00 AM",
+      "startTimestamp": 1782529200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "sLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Croatia vs Ghana",
+      "name": "Croatia vs Ghana",
+      "matchId": 19609150,
+      "details": "Match 67",
+      "stage": "Group Stage",
+      "group": "Group L",
+      "venue": {
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "address": "1 Lincoln Financial Field Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "hr",
+          "name": "Croatia",
+          "isHome": true,
+          "shortCode": "CRO"
+        },
+        {
+          "countryCode": "gh",
+          "name": "Ghana",
+          "isHome": false,
+          "shortCode": "GHA"
+        }
+      ],
+      "start": "2026-06-28 02:45:00 AM",
+      "startTimestamp": 1782594000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "sbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Panama vs England",
+      "name": "Panama vs England",
+      "matchId": 19609199,
+      "details": "Match 68",
+      "stage": "Group Stage",
+      "group": "Group L",
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "pa",
+          "name": "Panama",
+          "isHome": true,
+          "shortCode": "PAN"
+        },
+        {
+          "countryCode": "gb-eng",
+          "name": "England",
+          "isHome": false,
+          "shortCode": "ENG"
+        }
+      ],
+      "start": "2026-06-28 02:45:00 AM",
+      "startTimestamp": 1782594000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "srArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Colombia vs Portugal",
+      "name": "Colombia vs Portugal",
+      "matchId": 19609147,
+      "details": "Match 69",
+      "stage": "Group Stage",
+      "group": "Group K",
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "pt",
+          "name": "Portugal",
+          "isHome": false,
+          "shortCode": "POR"
+        },
+        {
+          "countryCode": "co",
+          "name": "Colombia",
+          "isHome": true,
+          "shortCode": "COL"
+        }
+      ],
+      "start": "2026-06-28 05:15:00 AM",
+      "startTimestamp": 1782603000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "s7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Congo DR vs Uzbekistan",
+      "name": "Congo DR vs Uzbekistan",
+      "matchId": 19609196,
+      "details": "Match 70",
+      "stage": "Group Stage",
+      "group": "Group K",
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "cd",
+          "name": "Congo DR",
+          "isHome": true,
+          "shortCode": "COD"
+        },
+        {
+          "countryCode": "uz",
+          "name": "Uzbekistan",
+          "isHome": false,
+          "shortCode": "UZB"
+        }
+      ],
+      "start": "2026-06-28 05:15:00 AM",
+      "startTimestamp": 1782603000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "tLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Algeria vs Austria",
+      "name": "Algeria vs Austria",
+      "matchId": 19609197,
+      "details": "Match 71",
+      "stage": "Group Stage",
+      "group": "Group J",
+      "venue": {
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "address": "1 Arrowhead Drive, Kansas City, MO 64129, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "dz",
+          "name": "Algeria",
+          "isHome": true,
+          "shortCode": "ALG"
+        },
+        {
+          "countryCode": "at",
+          "name": "Austria",
+          "isHome": false,
+          "shortCode": "AUT"
+        }
+      ],
+      "start": "2026-06-28 07:45:00 AM",
+      "startTimestamp": 1782612000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "tbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Jordan vs Argentina",
+      "name": "Jordan vs Argentina",
+      "matchId": 19609198,
+      "details": "Match 72",
+      "stage": "Group Stage",
+      "group": "Group J",
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": "ar",
+          "name": "Argentina",
+          "isHome": false,
+          "shortCode": "ARG"
+        },
+        {
+          "countryCode": "jo",
+          "name": "Jordan",
+          "isHome": true,
+          "shortCode": "JOR"
+        }
+      ],
+      "start": "2026-06-28 07:45:00 AM",
+      "startTimestamp": 1782612000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "trArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "2nd Group A vs 2nd Group B",
+      "name": "2nd Group A vs 2nd Group B",
+      "matchId": 19606960,
+      "details": "Match 73",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "2nd Group B",
+          "isHome": false,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group A",
+          "isHome": true,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-06-29 12:45:00 AM",
+      "startTimestamp": 1782673200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "t7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group C vs 2nd Group F",
+      "name": "1st Group C vs 2nd Group F",
+      "matchId": 19606959,
+      "details": "Match 74",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group C",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group F",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-06-29 10:45:00 PM",
+      "startTimestamp": 1782752400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "uLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group E vs 3rd Group A/B/C/D/F",
+      "name": "1st Group E vs 3rd Group A/B/C/D/F",
+      "matchId": 19606957,
+      "details": "Match 75",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group E",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "3rd Group A/B/C/D/F",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-06-30 02:15:00 AM",
+      "startTimestamp": 1782765000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276422480,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "ubArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group F vs 2nd Group C",
+      "name": "1st Group F vs 2nd Group C",
+      "matchId": 19606958,
+      "details": "Match 76",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Monterrey Stadium",
+        "city": "Guadalupe",
+        "address": "Avenida Pablo Livas 2011, Colonia La Pastora"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group F",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group C",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-06-30 06:45:00 AM",
+      "startTimestamp": 1782781200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "urArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "2nd Group E vs 2nd Group I",
+      "name": "2nd Group E vs 2nd Group I",
+      "matchId": 19606955,
+      "details": "Match 77",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "2nd Group E",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group I",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-06-30 10:45:00 PM",
+      "startTimestamp": 1782838800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "u7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group I vs 3rd Group C/D/F/G/H",
+      "name": "1st Group I vs 3rd Group C/D/F/G/H",
+      "matchId": 19606956,
+      "details": "Match 78",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "3rd Group C/D/F/G/H",
+          "isHome": false,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "1st Group I",
+          "isHome": true,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-01 02:45:00 AM",
+      "startTimestamp": 1782853200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "vLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group A vs 3rd Group C/E/F/H/I",
+      "name": "1st Group A vs 3rd Group C/E/F/H/I",
+      "matchId": 19606954,
+      "details": "Match 79",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "address": "Calzada de Tlalpan 3665, CoyoacÃ¡n"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group A",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "3rd Group C/E/F/H/I",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-01 06:45:00 AM",
+      "startTimestamp": 1782867600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "vbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group L vs 3rd Group E/H/I/J/K",
+      "name": "1st Group L vs 3rd Group E/H/I/J/K",
+      "matchId": 19606952,
+      "details": "Match 80",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "3rd Group E/H/I/J/K",
+          "isHome": false,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "1st Group L",
+          "isHome": true,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-01 09:45:00 PM",
+      "startTimestamp": 1782921600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "vrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group G vs 3rd Group A/E/H/I/J",
+      "name": "1st Group G vs 3rd Group A/E/H/I/J",
+      "matchId": 19606953,
+      "details": "Match 81",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "address": "800 Occidental Avenue South"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group G",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "3rd Group A/E/H/I/J",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-02 01:45:00 AM",
+      "startTimestamp": 1782936000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "v7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group D vs 3rd Group B/E/F/I/J",
+      "name": "1st Group D vs 3rd Group B/E/F/I/J",
+      "matchId": 19606951,
+      "details": "Match 82",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "San Francisco Bay Area Stadium",
+        "city": "Santa Clara",
+        "address": "4900 Marie P DeBartolo Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group D",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "3rd Group B/E/F/I/J",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-02 05:45:00 AM",
+      "startTimestamp": 1782950400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "wLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group H vs 2nd Group J",
+      "name": "1st Group H vs 2nd Group J",
+      "matchId": 19606948,
+      "details": "Match 83",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group H",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group J",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-03 12:45:00 AM",
+      "startTimestamp": 1783018800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "wbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "2nd Group K vs 2nd Group L",
+      "name": "2nd Group K vs 2nd Group L",
+      "matchId": 19606949,
+      "details": "Match 84",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "address": "170 Princesâ€™ Boulevard"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "2nd Group K",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group L",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-03 04:45:00 AM",
+      "startTimestamp": 1783033200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "wrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group B vs 3rd Group E/F/G/I/J",
+      "name": "1st Group B vs 3rd Group E/F/G/I/J",
+      "matchId": 19606950,
+      "details": "Match 85",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group B",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "3rd Group E/F/G/I/J",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-03 08:45:00 AM",
+      "startTimestamp": 1783047600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "w7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "2nd Group D vs 2nd Group G",
+      "name": "2nd Group D vs 2nd Group G",
+      "matchId": 19606945,
+      "details": "Match 86",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "2nd Group G",
+          "isHome": false,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group D",
+          "isHome": true,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-03 11:45:00 PM",
+      "startTimestamp": 1783101600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "xLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group J vs 2nd Group H",
+      "name": "1st Group J vs 2nd Group H",
+      "matchId": 19606946,
+      "details": "Match 87",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group J",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "2nd Group H",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-04 03:45:00 AM",
+      "startTimestamp": 1783116000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "xbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "1st Group K vs 3rd Group D/E/I/J/L",
+      "name": "1st Group K vs 3rd Group D/E/I/J/L",
+      "matchId": 19606947,
+      "details": "Match 88",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": {
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "address": "1 Arrowhead Drive, Kansas City, MO 64129, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "1st Group K",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "3rd Group D/E/I/J/L",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-04 07:15:00 AM",
+      "startTimestamp": 1783128600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "xrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 73 vs Winner Match 75",
+      "name": "Winner Match 73 vs Winner Match 75",
+      "matchId": 19606968,
+      "details": "Match 89",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "address": "8400 Kirby Drive, Houston"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 73",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 75",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-04 10:45:00 PM",
+      "startTimestamp": 1783184400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "x7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 74 vs Winner Match 77",
+      "name": "Winner Match 74 vs Winner Match 77",
+      "matchId": 19606967,
+      "details": "Match 90",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "address": "1 Lincoln Financial Field Way"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 74",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 77",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-05 02:45:00 AM",
+      "startTimestamp": 1783198800,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "yLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 76 vs Winner Match 78",
+      "name": "Winner Match 76 vs Winner Match 78",
+      "matchId": 19606966,
+      "details": "Match 91",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 78",
+          "isHome": false,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 76",
+          "isHome": true,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-06 01:45:00 AM",
+      "startTimestamp": 1783281600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "ybArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 79 vs Winner Match 80",
+      "name": "Winner Match 79 vs Winner Match 80",
+      "matchId": 19606965,
+      "details": "Match 92",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "address": "Calzada de Tlalpan 3665, CoyoacÃ¡n"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 79",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 80",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-06 05:45:00 AM",
+      "startTimestamp": 1783296000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "yrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 83 vs Winner Match 84",
+      "name": "Winner Match 83 vs Winner Match 84",
+      "matchId": 19606964,
+      "details": "Match 93",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 83",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 84",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-07 12:45:00 AM",
+      "startTimestamp": 1783364400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "y7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 81 vs Winner Match 82",
+      "name": "Winner Match 81 vs Winner Match 82",
+      "matchId": 19606963,
+      "details": "Match 94",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "address": "800 Occidental Avenue South"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 81",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 82",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-07 05:45:00 AM",
+      "startTimestamp": 1783382400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "zLArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 86 vs Winner Match 88",
+      "name": "Winner Match 86 vs Winner Match 88",
+      "matchId": 19606962,
+      "details": "Match 95",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 86",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 88",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-07 09:45:00 PM",
+      "startTimestamp": 1783440000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "zbArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 85 vs Winner Match 87",
+      "name": "Winner Match 85 vs Winner Match 87",
+      "matchId": 19606961,
+      "details": "Match 96",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": {
+        "name": "Vancouver Stadium",
+        "city": "Vancouver",
+        "address": "777 Pacific Boulevard, False Creek"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 85",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 87",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-08 01:45:00 AM",
+      "startTimestamp": 1783454400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "zrArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 89 vs Winner Match 90",
+      "name": "Winner Match 89 vs Winner Match 90",
+      "matchId": 19606972,
+      "details": "Match 97",
+      "stage": "Quarter-finals",
+      "group": null,
+      "venue": {
+        "name": "Boston Stadium",
+        "city": "Foxborough",
+        "address": "1388 One Patriot Place"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 89",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 90",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-10 01:45:00 AM",
+      "startTimestamp": 1783627200,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "z7ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 93 vs Winner Match 94",
+      "name": "Winner Match 93 vs Winner Match 94",
+      "matchId": 19606971,
+      "details": "Match 98",
+      "stage": "Quarter-finals",
+      "group": null,
+      "venue": {
+        "name": "Los Angeles Stadium",
+        "city": null,
+        "address": "Inglewood"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 93",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 94",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-11 12:45:00 AM",
+      "startTimestamp": 1783710000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "0LArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 91 vs Winner Match 92",
+      "name": "Winner Match 91 vs Winner Match 92",
+      "matchId": 19606970,
+      "details": "Match 99",
+      "stage": "Quarter-finals",
+      "group": null,
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 91",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 92",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-12 02:45:00 AM",
+      "startTimestamp": 1783803600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "0bArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Match 95 vs Winner Match 96",
+      "name": "Winner Match 95 vs Winner Match 96",
+      "matchId": 19606969,
+      "details": "Match 100",
+      "stage": "Quarter-finals",
+      "group": null,
+      "venue": {
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "address": "1 Arrowhead Drive, Kansas City, MO 64129, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Match 95",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Match 96",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-12 06:45:00 AM",
+      "startTimestamp": 1783818000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423103,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "0rArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Quarter-final 1 vs Winner Quarter-final 2",
+      "name": "Winner Quarter-final 1 vs Winner Quarter-final 2",
+      "matchId": 19606974,
+      "details": "Match 101",
+      "stage": "Semi-finals",
+      "group": null,
+      "venue": {
+        "name": "Dallas Stadium",
+        "city": "Arlington",
+        "address": "1 AT&T Way, Arlington, TX 76011, United States"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Quarter-final 2",
+          "isHome": false,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Quarter-final 1",
+          "isHome": true,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-15 12:45:00 AM",
+      "startTimestamp": 1784055600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423498,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "07ArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Quarter-final 3 vs Winner Quarter-final 4",
+      "name": "Winner Quarter-final 3 vs Winner Quarter-final 4",
+      "matchId": 19606973,
+      "details": "Match 102",
+      "stage": "Semi-finals",
+      "group": null,
+      "venue": {
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "address": "1 AMB Drive North West"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Quarter-final 3",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Quarter-final 4",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-16 12:45:00 AM",
+      "startTimestamp": 1784142000,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423498,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "1LArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Loser Semi-final 1 vs Loser Semi-final 2",
+      "name": "Loser Semi-final 1 vs Loser Semi-final 2",
+      "matchId": 19606976,
+      "details": "Match 103",
+      "stage": "3rd Place Final",
+      "group": null,
+      "venue": {
+        "name": "Miami Stadium",
+        "city": "Miami Gardens",
+        "address": "347 Don Shula Drive, Miami Gardens"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Loser Semi-final 1",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Loser Semi-final 2",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-19 02:45:00 AM",
+      "startTimestamp": 1784408400,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423498,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "1bArT54BOObeQ4xxoqmi"
+    },
+    {
+      "title": "Winner Semi-final 1 vs Winner Semi-final 2",
+      "name": "Winner Semi-final 1 vs Winner Semi-final 2",
+      "matchId": 19606975,
+      "details": "Match 104",
+      "stage": "Final",
+      "group": null,
+      "venue": {
+        "name": "New York New Jersey Stadium",
+        "city": "East Rutherford",
+        "address": "East Rutherford, New Jersey"
+      },
+      "state": "Not Started",
+      "participants": [
+        {
+          "countryCode": null,
+          "name": "Winner Semi-final 1",
+          "isHome": true,
+          "shortCode": null
+        },
+        {
+          "countryCode": null,
+          "name": "Winner Semi-final 2",
+          "isHome": false,
+          "shortCode": null
+        }
+      ],
+      "start": "2026-07-20 12:45:00 AM",
+      "startTimestamp": 1784487600,
+      "odds": [],
+      "result": null,
+      "v_type": "fifa_match",
+      "v_tt": 1781276423498,
+      "v_status": "PUBLISHED",
+      "v_published": true,
+      "v_has_draft": false,
+      "id": "1rArT54BOObeQ4xxoqmi"
+    }
+  ],
+  "total": 104
+}

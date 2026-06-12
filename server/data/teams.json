@@ -1,0 +1,341 @@
+{
+  "total": 48,
+  "list": [
+    {
+      "id": 18620,
+      "teamName": "Algeria",
+      "teamShortCode": "ALG",
+      "countryCode": "dz",
+      "group": "J"
+    },
+    {
+      "id": 18644,
+      "teamName": "Argentina",
+      "teamShortCode": "ARG",
+      "countryCode": "ar",
+      "group": "J"
+    },
+    {
+      "id": 18730,
+      "teamName": "Australia",
+      "teamShortCode": "AUS",
+      "countryCode": "au",
+      "group": "D"
+    },
+    {
+      "id": 18643,
+      "teamName": "Austria",
+      "teamShortCode": "AUT",
+      "countryCode": "at",
+      "group": "J"
+    },
+    {
+      "id": 18743,
+      "teamName": "Belgium",
+      "teamShortCode": "BEL",
+      "countryCode": "be",
+      "group": "G"
+    },
+    {
+      "id": 18625,
+      "teamName": "Bosnia and Herzegovina",
+      "teamShortCode": "BIH",
+      "countryCode": "ba",
+      "group": "B"
+    },
+    {
+      "id": 18704,
+      "teamName": "Brazil",
+      "teamShortCode": "BRA",
+      "countryCode": "br",
+      "group": "C"
+    },
+    {
+      "id": 18572,
+      "teamName": "Canada",
+      "teamShortCode": "CAN",
+      "countryCode": "ca",
+      "group": "B"
+    },
+    {
+      "id": 18823,
+      "teamName": "Cape Verde Islands",
+      "teamShortCode": "CPV",
+      "countryCode": "cv",
+      "group": "H"
+    },
+    {
+      "id": 18720,
+      "teamName": "Colombia",
+      "teamShortCode": "COL",
+      "countryCode": "co",
+      "group": "K"
+    },
+    {
+      "id": 18552,
+      "teamName": "Congo DR",
+      "teamShortCode": "COD",
+      "countryCode": "cd",
+      "group": "K"
+    },
+    {
+      "id": 18560,
+      "teamName": "Côte d'Ivoire",
+      "teamShortCode": "CIV",
+      "countryCode": "ci",
+      "group": "E"
+    },
+    {
+      "id": 18588,
+      "teamName": "Croatia",
+      "teamShortCode": "CRO",
+      "countryCode": "hr",
+      "group": "L"
+    },
+    {
+      "id": 18910,
+      "teamName": "Curacao",
+      "teamShortCode": "CUW",
+      "countryCode": "cw",
+      "group": "E"
+    },
+    {
+      "id": 18718,
+      "teamName": "Czech Republic",
+      "teamShortCode": "CZE",
+      "countryCode": "cz",
+      "group": "A"
+    },
+    {
+      "id": 18573,
+      "teamName": "Ecuador",
+      "teamShortCode": "ECU",
+      "countryCode": "ec",
+      "group": "E"
+    },
+    {
+      "id": 18546,
+      "teamName": "Egypt",
+      "teamShortCode": "EGY",
+      "countryCode": "eg",
+      "group": "G"
+    },
+    {
+      "id": 18645,
+      "teamName": "England",
+      "teamShortCode": "ENG",
+      "countryCode": "gb-eng",
+      "group": "L"
+    },
+    {
+      "id": 18647,
+      "teamName": "France",
+      "teamShortCode": "FRA",
+      "countryCode": "fr",
+      "group": "I"
+    },
+    {
+      "id": 18660,
+      "teamName": "Germany",
+      "teamShortCode": "GER",
+      "countryCode": "de",
+      "group": "E"
+    },
+    {
+      "id": 18553,
+      "teamName": "Ghana",
+      "teamShortCode": "GHA",
+      "countryCode": "gh",
+      "group": "L"
+    },
+    {
+      "id": 18804,
+      "teamName": "Haiti",
+      "teamShortCode": "HAI",
+      "countryCode": "ht",
+      "group": "C"
+    },
+    {
+      "id": 18652,
+      "teamName": "Iran",
+      "teamShortCode": "IRN",
+      "countryCode": "ir",
+      "group": "G"
+    },
+    {
+      "id": 18600,
+      "teamName": "Iraq",
+      "teamShortCode": "IRQ",
+      "countryCode": "iq",
+      "group": "I"
+    },
+    {
+      "id": 18597,
+      "teamName": "Japan",
+      "teamShortCode": "JPN",
+      "countryCode": "jp",
+      "group": "F"
+    },
+    {
+      "id": 18559,
+      "teamName": "Jordan",
+      "teamShortCode": "JOR",
+      "countryCode": "jo",
+      "group": "J"
+    },
+    {
+      "id": 18567,
+      "teamName": "Korea Republic",
+      "teamShortCode": "KOR",
+      "countryCode": "kr",
+      "group": "A"
+    },
+    {
+      "id": 18576,
+      "teamName": "Mexico",
+      "teamShortCode": "MEX",
+      "countryCode": "mx",
+      "group": "A"
+    },
+    {
+      "id": 18551,
+      "teamName": "Morocco",
+      "teamShortCode": "MAR",
+      "countryCode": "ma",
+      "group": "C"
+    },
+    {
+      "id": 18694,
+      "teamName": "Netherlands",
+      "teamShortCode": "NED",
+      "countryCode": "nl",
+      "group": "F"
+    },
+    {
+      "id": 18613,
+      "teamName": "New Zealand",
+      "teamShortCode": "NZL",
+      "countryCode": "nz",
+      "group": "G"
+    },
+    {
+      "id": 18578,
+      "teamName": "Norway",
+      "teamShortCode": "NOR",
+      "countryCode": "no",
+      "group": "I"
+    },
+    {
+      "id": 18717,
+      "teamName": "Panama",
+      "teamShortCode": "PAN",
+      "countryCode": "pa",
+      "group": "L"
+    },
+    {
+      "id": 18723,
+      "teamName": "Paraguay",
+      "teamShortCode": "PAR",
+      "countryCode": "py",
+      "group": "D"
+    },
+    {
+      "id": 18701,
+      "teamName": "Portugal",
+      "teamShortCode": "POR",
+      "countryCode": "pt",
+      "group": "K"
+    },
+    {
+      "id": 18544,
+      "teamName": "Qatar",
+      "teamShortCode": "QAT",
+      "countryCode": "qa",
+      "group": "B"
+    },
+    {
+      "id": 18562,
+      "teamName": "Saudi Arabia",
+      "teamShortCode": "KSA",
+      "countryCode": "sa",
+      "group": "H"
+    },
+    {
+      "id": 18706,
+      "teamName": "Scotland",
+      "teamShortCode": "SCO",
+      "countryCode": "gb-sct",
+      "group": "C"
+    },
+    {
+      "id": 18558,
+      "teamName": "Senegal",
+      "teamShortCode": "SEN",
+      "countryCode": "sn",
+      "group": "I"
+    },
+    {
+      "id": 18555,
+      "teamName": "South Africa",
+      "teamShortCode": "RSA",
+      "countryCode": "za",
+      "group": "A"
+    },
+    {
+      "id": 18710,
+      "teamName": "Spain",
+      "teamShortCode": "ESP",
+      "countryCode": "es",
+      "group": "H"
+    },
+    {
+      "id": 18564,
+      "teamName": "Sweden",
+      "teamShortCode": "SWE",
+      "countryCode": "se",
+      "group": "F"
+    },
+    {
+      "id": 18708,
+      "teamName": "Switzerland",
+      "teamShortCode": "SUI",
+      "countryCode": "ch",
+      "group": "B"
+    },
+    {
+      "id": 18554,
+      "teamName": "Tunisia",
+      "teamShortCode": "TUN",
+      "countryCode": "tn",
+      "group": "F"
+    },
+    {
+      "id": 18716,
+      "teamName": "Türkiye",
+      "teamShortCode": "TUR",
+      "countryCode": "tr",
+      "group": "D"
+    },
+    {
+      "id": 18571,
+      "teamName": "United States",
+      "teamShortCode": "USA",
+      "countryCode": "us",
+      "group": "D"
+    },
+    {
+      "id": 15251,
+      "teamName": "Uruguay",
+      "teamShortCode": "URU",
+      "countryCode": "uy",
+      "group": "H"
+    },
+    {
+      "id": 18745,
+      "teamName": "Uzbekistan",
+      "teamShortCode": "UZB",
+      "countryCode": "uz",
+      "group": "K"
+    }
+  ]
+}
